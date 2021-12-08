@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blank Page | PlainAdmin Demo</title>
+
+  <!-- ========== All CSS files linkup ========= -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap5.min.css">  
+  <link rel="stylesheet" href="css/lineicons.css" />
+  <link rel="stylesheet" href="css/main.css" />
+
+
+</head>
+
+<body>
+  <!-- ======== sidebar-nav start =========== -->
+  <aside class="sidebar-nav-wrapper">
+    <div class="navbar-logo">
+      <a href="index.html">
+        <img src="images/BoardStore.png" style="height: 70px;" alt="logo" />
+      </a>
+    </div>
+    <nav class="sidebar-nav">
+      <ul>
+        <li class="nav-item">
+          <a href="dashbroad.html">
+            <span class="icon">
+              <i class="lni lni-dashboard"></i>
+            </span>
+            <span class="text">Dashboard</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#">
+            <span class="icon">
+              <i class="lni lni-users"></i>
+            </span>
+            <span class="text">Người dùng</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#">
+            <span class="icon">
+              <i class="lni lni-cart"></i>
+            </span>
+            <span class="text">Đơn Hàng</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#">
+            <span class="icon">
+              <i class="lni lni-tag "></i>
+            </span>
+            <span class="text">Danh Mục</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#">
+            <span class="icon">
+              <i class="lni lni-archive"></i>
+            </span>
+            <span class="text">Sản phẩm</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#">
+            <span class="icon">
+              <i class="lni lni-popup"></i>
+            </span>
+            <span class="text">Dánh giá sản phẩm</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#">
+            <span class="icon">
+              <i class="lni lni-blogger"></i>
+            </span>
+            <span class="text">Blog</span>
+          </a>
+        </li>
+        <li class="nav-item nav-item-has-children">
+          <a href="#0" class="collapsed" data-bs-toggle="collapse" data-bs-target="#ddmenu_1" aria-controls="ddmenu_1"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon">
+              <svg width="22" height="22" viewBox="0 0 22 22">
+                <path
+                  d="M17.4167 4.58333V6.41667H13.75V4.58333H17.4167ZM8.25 4.58333V10.0833H4.58333V4.58333H8.25ZM17.4167 11.9167V17.4167H13.75V11.9167H17.4167ZM8.25 15.5833V17.4167H4.58333V15.5833H8.25ZM19.25 2.75H11.9167V8.25H19.25V2.75ZM10.0833 2.75H2.75V11.9167H10.0833V2.75ZM19.25 10.0833H11.9167V19.25H19.25V10.0833ZM10.0833 13.75H2.75V19.25H10.0833V13.75Z" />
+              </svg>
+            </span>
+            <span class="text">Thiết lập</span>
+          </a>
+          <ul id="ddmenu_1" class="collapse dropdown-nav">
+            <li>
+              <a href="index.html">Silder</a>
+            </li>
+            <li>
+              <a href="index.html">Điều khoảng dịch vụ</a>
+            </li>
+            <li>
+              <a href="index.html"> eCommerce </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+  <div class="overlay"></div>
+  <!-- ======== sidebar-nav end =========== -->
+
+  <!-- ======== main-wrapper start =========== -->
+  <main class="main-wrapper">
+    <!-- ========== header start ========== -->
+    <header class="header">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-5 col-md-5 col-6">
+            <div class="header-left d-flex align-items-center">
+              <div class="menu-toggle-btn mr-20">
+                <button id="menu-toggle" class="main-btn btn-hover">
+                  <i class="lni lni-chevron-left me-2"></i> Menu
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7 col-md-7 col-6">
+            <div class="header-right">
+              <!-- profile start -->
+              <div class="profile-box">
+                <button class="dropdown-toggle bg-transparent border-0" type="button" id="profile"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <div class="profile-info">
+                    <div class="info">
+                      <h6>John Doe</h6>
+                      <div class="image">
+                        <img src="images/149071.png" alt="" />
+                        <span class="status"></span>
+                      </div>
+                    </div>
+                  </div>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profile">
+                  <li>
+                    <a href="#0">
+                      <i class="lni lni-user"></i> View Profile
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#0">
+                      <i class="lni lni-alarm"></i> Notifications
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#0"> <i class="lni lni-inbox"></i> Messages </a>
+                  </li>
+                  <li>
+                    <a href="#0"> <i class="lni lni-cog"></i> Settings </a>
+                  </li>
+                  <li>
+                    <a href="#0"> <i class="lni lni-exit"></i> Sign Out </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- profile end -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ========== header end ========== -->
+
+    <!-- ========== section start ========== -->
+    <section class="section">
+      <div class="container-fluid">
+        <!-- ========== title-wrapper start ========== -->
+        <div class="title-wrapper pt-3">
+          <div class="d-flex align-items-center">
+            <!-- end col -->
+            <div class="breadcrumb-wrapper">
+
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="#0">Dashboard</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Page
+                </li>
+              </ol>
+
+            </div>
+            <!-- end col -->
+          </div>
+          <!-- end row -->
+        </div>
+        <div class="row mt-3">
+          <div class="col-3">
+            <div class="card border-left-primary shadow h-100 py-2 rounded-3">
+              <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                  <div class="col mr-2">
+                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                      Lược xem trong ngày</div>
+                    <div class="h5 mb-0 font-weight-bold text-gray-800">40000 lượt xem</div>
+                  </div>
+                  <div class="col-auto">
+                    <i class="lni lni-graph" style="font-size: 36px;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card border-left-success shadow h-100 py-2 rounded-3">
+              <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                  <div class="col mr-2">
+                    <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                      Số lượng đơn hàng mới</div>
+                    <div class="h5 mb-0 font-weight-bold text-gray-800">50 đơn hàng</div>
+                  </div>
+                  <div class="col-auto">
+                    <i class="lni lni-cart-full" style="font-size: 36px;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card border-left-info shadow h-100 py-2 rounded-3">
+              <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                  <div class="col mr-2">
+                    <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
+                      Số lượng khách hàng</div>
+                    <div class="h5 mb-0 font-weight-bold text-gray-800">4000</div>
+                  </div>
+                  <div class="col-auto">
+                    <i class="lni lni-users" style="font-size: 36px;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card border-left-warning shadow h-100 py-2 rounded-3">
+              <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                  <div class="col mr-2">
+                    <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                      Đánh giá</div>
+                    <div class="h5 mb-0 font-weight-bold text-gray-800">20</div>
+                  </div>
+                  <div class="col-auto">
+                    <i class="lni lni-popup" style="font-size: 36px;"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="row pt-5">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-body">
+                <div class="h5 mb-0 font-weight-bold text-gray-800">Khách Hàng Mới</div>
+
+                <table id="newUser" class="table table-striped" style="width:100%">
+                  <thead>
+                    <tr>
+                      <th>Người dùng</th>
+                      <th>Tên</th>
+                      <th>Ngày tạo</th>
+                      <th>Email</th>
+                      <th>Trạng thái</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><img src="" width="70px" height="70px" alt=""></td>
+                      <td>Nguyễn Văn A</td>
+                      <td>14/11/2021</td>
+                      <td>Hoilamchi@gmail.com</td>
+                      <td>
+                        <span class="status-btn warning-btn">Không hoạt động</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><img src="" width="70px" height="70px" alt=""></td>
+                      <td>Nguyễn Văn B</td>
+                      <td>14/11/2021</td>
+                      <td>Hoilamchi@gmail.com</td>
+                      <td>
+                        <span class="status-btn success-btn">Hoạt đọng</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><img src="" width="70px" height="70px" alt=""></td>
+                      <td>Nguyễn Văn C</td>
+                      <td>14/11/2021</td>
+                      <td>Hoilamchi@gmail.com</td>
+                      <td>
+                        <span class="status-btn close-btn">Khóa</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><img src="" width="70px" height="70px" alt=""></td>
+                      <td>Nguyễn Văn D</td>
+                      <td>14/11/2021</td>
+                      <td>Hoilamchi@gmail.com</td>
+                      <td>
+                        <span class="status-btn warning-btn">Không hoạt động</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- ========== title-wrapper end ========== -->
+      </div>
+      <!-- end container -->
+    </section>
+    <!-- ========== section end ========== -->
+
+    <!-- ========== footer start =========== -->
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="terms d-flex">
+            <a href="#0" class="text-sm">Term & Conditions</a>
+            <a href="#0" class="text-sm ms-3">Privacy & Policy</a>
+          </div>
+          <!-- end row -->
+        </div>
+        <!-- end container -->
+    </footer>
+    <!-- ========== footer end =========== -->
+  </main>
+  <!-- ======== main-wrapper end =========== -->
+
+  <!-- ========= All Javascript files linkup ======== -->
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"></script>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/datatable.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

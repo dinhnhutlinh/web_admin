@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon" />
+  <title>Blank Page | PlainAdmin Demo</title>
+
+  <!-- ========== All CSS files linkup ========= -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/lineicons.css" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+  <!-- ======== sidebar-nav start =========== -->
+  <aside class="sidebar-nav-wrapper">
+    <div class="navbar-logo">
+      <a href="index.html">
+        <img src="images/BoardStore.png" style="height: 70px;" alt="logo" />
+      </a>
+    </div>
+    <nav class="sidebar-nav">
+      <ul>
+        <li class="nav-item">
+          <a href="dashbroad.html">
+            <span class="icon">
+              <i class="lni lni-dashboard"></i>
+            </span>
+            <span class="text">Dashboard</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#">
+            <span class="icon">
+              <i class="lni lni-users"></i>
+            </span>
+            <span class="text">Người dùng</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#">
+            <span class="icon">
+              <i class="lni lni-cart"></i>
+            </span>
+            <span class="text">Đơn Hàng</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#">
+            <span class="icon">
+              <i class="lni lni-tag "></i>
+            </span>
+            <span class="text">Danh Mục</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#">
+            <span class="icon">
+              <i class="lni lni-archive"></i>
+            </span>
+            <span class="text">Sản phẩm</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#">
+            <span class="icon">
+              <i class="lni lni-popup"></i>
+            </span>
+            <span class="text">Dánh giá sản phẩm</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#">
+            <span class="icon">
+              <i class="lni lni-blogger"></i>
+            </span>
+            <span class="text">Blog</span>
+          </a>
+        </li>
+        <li class="nav-item nav-item-has-children">
+          <a href="#0" class="collapsed" data-bs-toggle="collapse" data-bs-target="#ddmenu_1" aria-controls="ddmenu_1"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon">
+              <svg width="22" height="22" viewBox="0 0 22 22">
+                <path
+                  d="M17.4167 4.58333V6.41667H13.75V4.58333H17.4167ZM8.25 4.58333V10.0833H4.58333V4.58333H8.25ZM17.4167 11.9167V17.4167H13.75V11.9167H17.4167ZM8.25 15.5833V17.4167H4.58333V15.5833H8.25ZM19.25 2.75H11.9167V8.25H19.25V2.75ZM10.0833 2.75H2.75V11.9167H10.0833V2.75ZM19.25 10.0833H11.9167V19.25H19.25V10.0833ZM10.0833 13.75H2.75V19.25H10.0833V13.75Z" />
+              </svg>
+            </span>
+            <span class="text">Thiết lập</span>
+          </a>
+          <ul id="ddmenu_1" class="collapse dropdown-nav">
+            <li>
+              <a href="index.html">Silder</a>
+            </li>
+            <li>
+              <a href="index.html">Điều khoảng dịch vụ</a>
+            </li>
+            <li>
+              <a href="index.html"> eCommerce </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+  <div class="overlay"></div>
+  <!-- ======== sidebar-nav end =========== -->
+
+  <!-- ======== main-wrapper start =========== -->
+  <main class="main-wrapper">
+    <!-- ========== header start ========== -->
+    <header class="header">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-5 col-md-5 col-6">
+            <div class="header-left d-flex align-items-center">
+              <div class="menu-toggle-btn mr-20">
+                <button id="menu-toggle" class="main-btn btn-hover">
+                  <i class="lni lni-chevron-left me-2"></i> Menu
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7 col-md-7 col-6">
+            <div class="header-right">
+              <!-- profile start -->
+              <div class="profile-box">
+                <button class="dropdown-toggle bg-transparent border-0" type="button" id="profile"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <div class="profile-info">
+                    <div class="info">
+                      <h6>John Doe</h6>
+                      <div class="image">
+                        <img src="images/149071.png" alt="" />
+                        <span class="status"></span>
+                      </div>
+                    </div>
+                  </div>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profile">
+                  <li>
+                    <a href="#0">
+                      <i class="lni lni-user"></i> View Profile
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#0">
+                      <i class="lni lni-alarm"></i> Notifications
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#0"> <i class="lni lni-inbox"></i> Messages </a>
+                  </li>
+                  <li>
+                    <a href="#0"> <i class="lni lni-cog"></i> Settings </a>
+                  </li>
+                  <li>
+                    <a href="#0"> <i class="lni lni-exit"></i> Sign Out </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- profile end -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ========== header end ========== -->
+
+    <!-- ========== section start ========== -->
+    <section class="section">
+      <div class="container-fluid">
+        <!-- ========== title-wrapper start ========== -->
+        <div class="title-wrapper pt-3">
+          <div class="d-flex align-items-center">
+            <!-- end col -->
+            <div class="breadcrumb-wrapper">
+
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="#0">Dashboard</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Sản phẩm
+                </li>
+              </ol>
+
+            </div>
+            <!-- end col -->
+          </div>
+          <!-- end row -->
+        </div>
+        <div class="row">
+          <section class="content-main">
+
+            <div class="content-header">
+              <h2 class="content-title">Danh sách sản phẩm </h2>
+              <div>
+                <a href="#" class="btn btn-success"></i> Thêm sản phẩm</a>
+              </div>
+            </div>
+
+            <div class="card mb-4">
+              <header class="card-header">
+                <div class="row align-items-center p-3">
+
+                  <div class="col-md-3 col-12 me-auto mb-md-0 mb-3">
+                    <select class="form-select">
+                      <option>Tất cả</option>
+                      <option>BroadGame gia đình</option>
+                      <option>BroadGame Trí tuệ</option>
+                      <option>TCG</option>
+                    </select>
+                  </div>
+                  <div class="col-md-2 col-6">
+                    <input type="date" class="form-control">
+                  </div>
+                  <div class="col-md-2 col-6">
+                    <select class="form-select">
+                      <option>Trạng Thái</option>
+                      <option>Hoạt động</option>
+                      <option>Không hoạt động</option>
+                    </select>
+                  </div>
+                </div>
+              </header> <!-- card-header end// -->
+
+              <div class="card-body">
+                <article class="itemlist p-3 border-bottom">
+                  <div class="row align-items-center">
+                    <div class="col-lg-4 col-sm-4 col-8 flex-grow-1 col-name">
+                      <a class="itemside" href="#">
+                        <div class="left">
+                          <img src="images/ji81620191852.png" style="width: 60px; height: 60px;"
+                            class="img-sm img-thumbnail" alt="Item">
+                        </div>
+                        <div class="info">
+                          <h6 class="mb-0">Cuộc đua sao chổi</h6>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-lg-2 col-sm-2 col-4 col-price"> <span>140000</span> </div>
+                    <div class="col-lg-2 col-sm-2 col-4 col-status">
+                      <span class="badge rounded-pill alert-success" style="font-size: 1rem;">Hoạt động</span>
+                    </div>
+                    <div class="col-lg-2 col-sm-2 col-4 col-date">
+                      <span>02/11/2021</span>
+                    </div>
+                    <div class="col-lg-1 col-sm-2 col-4 col-action">
+                      <div class="dropdown float-end">
+                        <a href="#" data-bs-toggle="dropdown" class="btn btn-light">
+                          <i class="lni lni-more"></i> </a>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">Xem sản phẩm</a>
+                          <a class="dropdown-item" href="addProduct.html">Chỉnh sửa</a>
+                          <a class="dropdown-item text-danger" href="#">Xóa</a>
+                        </div>
+                      </div> <!-- dropdown // -->
+                    </div>
+                  </div> <!-- row .// -->
+                </article> <!-- itemlist  .// -->
+                <article class="itemlist p-3 border-bottom">
+                  <div class="row align-items-center">
+                    <div class="col-lg-4 col-sm-4 col-8 flex-grow-1 col-name">
+                      <a class="itemside" href="#">
+                        <div class="left">
+                          <img src="images/ji81620191852.png" style="width: 60px; height: 60px;"
+                            class="img-sm img-thumbnail" alt="Item">
+                        </div>
+                        <div class="info">
+                          <h6 class="mb-0">Cuộc đua sao chổi</h6>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-lg-2 col-sm-2 col-4 col-price"> <span>140000</span> </div>
+                    <div class="col-lg-2 col-sm-2 col-4 col-status">
+                      <span class="badge rounded-pill alert-success" style="font-size: 1rem;">Hoạt động</span>
+                    </div>
+                    <div class="col-lg-2 col-sm-2 col-4 col-date">
+                      <span>02/11/2021</span>
+                    </div>
+                    <div class="col-lg-1 col-sm-2 col-4 col-action">
+                      <div class="dropdown float-end">
+                        <a href="#" data-bs-toggle="dropdown" class="btn btn-light">
+                          <i class="lni lni-more"></i> </a>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">Xem sản phẩm</a>
+                          <a class="dropdown-item" href="addProduct.html">Chỉnh sửa</a>
+                          <a class="dropdown-item text-danger" href="#">Xóa</a>
+                        </div>
+                      </div> <!-- dropdown // -->
+                    </div>
+                  </div> <!-- row .// -->
+                </article> <!-- itemlist  .// -->
+                <article class="itemlist p-3 border-bottom">
+                  <div class="row align-items-center">
+
+                    <div class="col-lg-4 col-sm-4 col-8 flex-grow-1 col-name">
+                      <a class="itemside" href="#">
+                        <div class="left">
+                          <img src="images/ji81620191852.png" style="width: 60px; height: 60px;"
+                            class="img-sm img-thumbnail" alt="Item">
+                        </div>
+                        <div class="info">
+                          <h6 class="mb-0">Cuộc đua sao chổi</h6>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-lg-2 col-sm-2 col-4 col-price"> <span>140000</span> </div>
+                    <div class="col-lg-2 col-sm-2 col-4 col-status">
+                      <span class="badge rounded-pill alert-success" style="font-size: 1rem;">Hoạt động</span>
+                    </div>
+                    <div class="col-lg-2 col-sm-2 col-4 col-date">
+                      <span>02/11/2021</span>
+                    </div>
+                    <div class="col-lg-1 col-sm-2 col-4 col-action">
+                      <div class="dropdown float-end">
+                        <a href="#" data-bs-toggle="dropdown" class="btn btn-light">
+                          <i class="lni lni-more"></i> </a>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">Xem sản phẩm</a>
+                          <a class="dropdown-item" href="addProduct.html">Chỉnh sửa</a>
+                          <a class="dropdown-item text-danger" href="#">Xóa</a>
+                        </div>
+                      </div> <!-- dropdown // -->
+                    </div>
+                  </div> <!-- row .// -->
+                </article> <!-- itemlist  .// -->
+                <article class="itemlist p-3 border-bottom">
+                  <div class="row align-items-center">
+
+                    <div class="col-lg-4 col-sm-4 col-8 flex-grow-1 col-name">
+                      <a class="itemside" href="#">
+                        <div class="left">
+                          <img src="images/ji81620191852.png" style="width: 60px; height: 60px;"
+                            class="img-sm img-thumbnail" alt="Item">
+                        </div>
+                        <div class="info">
+                          <h6 class="mb-0">Cuộc đua sao chổi</h6>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-lg-2 col-sm-2 col-4 col-price"> <span>140000</span> </div>
+                    <div class="col-lg-2 col-sm-2 col-4 col-status">
+                      <span class="badge rounded-pill alert-success" style="font-size: 1rem;">Hoạt động</span>
+                    </div>
+                    <div class="col-lg-2 col-sm-2 col-4 col-date">
+                      <span>02/11/2021</span>
+                    </div>
+                    <div class="col-lg-1 col-sm-2 col-4 col-action">
+                      <div class="dropdown float-end">
+                        <a href="#" data-bs-toggle="dropdown" class="btn btn-light">
+                          <i class="lni lni-more"></i> </a>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">Xem sản phẩm</a>
+                          <a class="dropdown-item" href="addProduct.html">Chỉnh sửa</a>
+                          <a class="dropdown-item text-danger" href="#">Xóa</a>
+                        </div>
+                      </div> <!-- dropdown // -->
+                    </div>
+                  </div> <!-- row .// -->
+                </article> <!-- itemlist  .// -->
+                <article class="itemlist p-3 border-bottom">
+                  <div class="row align-items-center">
+
+                    <div class="col-lg-4 col-sm-4 col-8 flex-grow-1 col-name">
+                      <a class="itemside" href="#">
+                        <div class="left">
+                          <img src="images/ji81620191852.png" style="width: 60px; height: 60px;"
+                            class="img-sm img-thumbnail" alt="Item">
+                        </div>
+                        <div class="info">
+                          <h6 class="mb-0">Cuộc đua sao chổi</h6>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="col-lg-2 col-sm-2 col-4 col-price"> <span>140000</span> </div>
+                    <div class="col-lg-2 col-sm-2 col-4 col-status">
+                      <span class="badge rounded-pill alert-success" style="font-size: 1rem;">Hoạt động</span>
+                    </div>
+                    <div class="col-lg-2 col-sm-2 col-4 col-date">
+                      <span>02/11/2021</span>
+                    </div>
+                    <div class="col-lg-1 col-sm-2 col-4 col-action">
+                      <div class="dropdown float-end">
+                        <a href="#" data-bs-toggle="dropdown" class="btn btn-light">
+                          <i class="lni lni-more"></i> </a>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">Xem sản phẩm</a>
+                          <a class="dropdown-item" href="addProduct.html">Chỉnh sửa</a>
+                          <a class="dropdown-item text-danger" href="#">Xóa</a>
+                        </div>
+                      </div> <!-- dropdown // -->
+                    </div>
+                  </div> <!-- row .// -->
+                </article> <!-- itemlist  .// -->
+
+                <nav class="float-end mt-4" aria-label="Page navigation">
+                  <ul class="pagination">
+                    <li class="page-item disabled"><a class="page-link" href="#">Trước</a></li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                  </ul>
+                </nav>
+
+              </div> <!-- card-body end// -->
+            </div> <!-- card end// -->
+          </section>
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- ========== section end ========== -->
+
+    <!-- ========== footer start =========== -->
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="terms d-flex">
+            <a href="#0" class="text-sm">Term & Conditions</a>
+            <a href="#0" class="text-sm ms-3">Privacy & Policy</a>
+          </div>
+          <!-- end row -->
+        </div>
+        <!-- end container -->
+    </footer>
+    <!-- ========== footer end =========== -->
+  </main>
+  <!-- ======== main-wrapper end =========== -->
+
+  <!-- ========= All Javascript files linkup ======== -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
