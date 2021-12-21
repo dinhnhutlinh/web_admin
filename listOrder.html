@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon" />
+  <title>Blank Page | PlainAdmin Demo</title>
+
+  <!-- ========== All CSS files linkup ========= -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+  <!-- ======== sidebar-nav start =========== -->
+  <aside class="sidebar-nav-wrapper">
+    <div class="navbar-logo">
+      <a href="index.html">
+        <img src="images/BoardStore.png" style="height: 70px;" alt="logo" />
+      </a>
+    </div>
+    <nav class="sidebar-nav">
+      <ul>
+        <li class="nav-item">
+          <a href="dashbroad.html">
+            <span class="icon">
+              <i class="fas fa-tachometer-alt"></i>
+            </span>
+            <span class="text">Dashboard</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#">
+            <span class="icon">
+              <i class="fas fa-users"></i>
+            </span>
+            <span class="text">Người dùng</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#">
+            <span class="icon">
+              <i class="fas fa-shopping-cart"></i>
+            </span>
+            <span class="text">Đơn Hàng</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#">
+            <span class="icon">
+              <i class="fas fa-tags"></i>
+            </span>
+            <span class="text">Danh Mục</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#">
+            <span class="icon">
+              <i class="fas fa-archive"></i>
+            </span>
+            <span class="text">Sản phẩm</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#">
+            <span class="icon">
+              <i class="fas fa-star-half-alt"></i>
+            </span>
+            <span class="text">Đánh giá sản phẩm</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#">
+            <span class="icon">
+              <i class="far fa-newspaper"></i>
+            </span>
+            <span class="text">Blog</span>
+          </a>
+        </li>
+        <li class="nav-item nav-item-has-children">
+          <a href="#0" class="collapsed" data-bs-toggle="collapse" data-bs-target="#ddmenu_1" aria-controls="ddmenu_1"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon">
+              <svg width="22" height="22" viewBox="0 0 22 22">
+                <path
+                  d="M17.4167 4.58333V6.41667H13.75V4.58333H17.4167ZM8.25 4.58333V10.0833H4.58333V4.58333H8.25ZM17.4167 11.9167V17.4167H13.75V11.9167H17.4167ZM8.25 15.5833V17.4167H4.58333V15.5833H8.25ZM19.25 2.75H11.9167V8.25H19.25V2.75ZM10.0833 2.75H2.75V11.9167H10.0833V2.75ZM19.25 10.0833H11.9167V19.25H19.25V10.0833ZM10.0833 13.75H2.75V19.25H10.0833V13.75Z" />
+              </svg>
+            </span>
+            <span class="text">Thiết lập</span>
+          </a>
+          <ul id="ddmenu_1" class="collapse dropdown-nav">
+            <li>
+              <a href="index.html">Silder</a>
+            </li>
+            <li>
+              <a href="index.html">Điều khoảng dịch vụ</a>
+            </li>
+            <li>
+              <a href="index.html"> eCommerce </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+  <div class="overlay"></div>
+  <!-- ======== sidebar-nav end =========== -->
+
+  <!-- ======== main-wrapper start =========== -->
+  <main class="main-wrapper">
+    <!-- ========== header start ========== -->
+    <header class="header">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-5 col-md-5 col-6">
+            <div class="header-left d-flex align-items-center">
+              <div class="menu-toggle-btn mr-20">
+                <button id="menu-toggle" class="main-btn btn-hover">
+                  <i class="fas fa-bars"></i> Menu
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7 col-md-7 col-6">
+            <div class="header-right">
+              <!-- profile start -->
+              <div class="profile-box">
+                <button class="dropdown-toggle bg-transparent border-0" type="button" id="profile"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <div class="profile-info">
+                    <div class="info">
+                      <h5>Big Bill</h5>
+                      <div class="image">
+                        <img src="images/149071.png" alt="" />
+                        <span class="status"></span>
+                      </div>
+                    </div>
+                  </div>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profile">
+                  <li>
+                    <a href="#0">
+                      <i class="lni lni-user"></i> Tài khoản
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#0"> <i class="lni lni-inbox"></i> Tin Nhắn </a>
+                  </li>
+                  <li>
+                    <a href="#0"> <i class="lni lni-exit"></i> Sign Out </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- profile end -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- ========== header end ========== -->
+
+    <!-- ========== section start ========== -->
+    <section class="section">
+      <div class="container-fluid">
+        <!-- ========== title-wrapper start ========== -->
+        <div class="title-wrapper pt-3">
+          <div class="d-flex align-items-center">
+            <!-- end col -->
+            <div class="breadcrumb-wrapper">
+
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="#0">Dashboard</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Đơn hàng
+                </li>
+              </ol>
+
+            </div>
+            <!-- end col -->
+          </div>
+          <!-- end row -->
+        </div>
+        <div class="row">
+          <section class="content-main">
+
+            <div class="content-header">
+              <h2 class="content-title">Đơn Hàng</h2>
+              <div>
+                <a href="#" class="btn btn-success">Tạo mới</a>
+              </div>
+            </div>
+
+            <div class="card mb-4">
+              <header class="card-header">
+                <div class="row gx-3">
+                  <div class="col-lg-4 col-md-6 me-auto">
+                    <input type="text" placeholder="Search..." class="form-control">
+                  </div>
+                  <div class="col-lg-2 col-6 col-md-3">
+                    <select class="form-select">
+                      <option>Status</option>
+                      <option>Active</option>
+                      <option>Disabled</option>
+                      <option>Show all</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-2 col-6 col-md-3">
+                    <select class="form-select">
+                      <option>Show 20</option>
+                      <option>Show 30</option>
+                      <option>Show 40</option>
+                    </select>
+                  </div>
+                </div>
+              </header> <!-- card-header end// -->
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th>Mã đơn hàng</th>
+                        <th scope="col">Tên khách hàng</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Tổng tiền</th>
+                        <th scope="col">Trạng thái</th>
+                        <th scope="col">Ngày đặt</th>
+                        <th scope="col" class="text-end"> Hành động</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>0901</td>
+                        <td><b>Marvin McKinney</b></td>
+                        <td>marvin@example.com</td>
+                        <td>$9.00</td>
+                        <td><span class="badge rounded-pill alert-warning">Đang vận chuyển</span></td>
+                        <td>03.12.2020</td>
+                        <td class="text-end">
+                        
+                          <div class="dropdown">
+                            <a href="#" data-bs-toggle="dropdown" class="btn btn-light" aria-expanded="false"> <i class="fas fa-ellipsis-h"></i> </a>
+                            <div class="dropdown-menu" style="margin: 0px;">
+                              <a class="dropdown-item" href="orderDetail.html">Xem</a>
+                              <a class="dropdown-item" href="orderEdit.html">Chỉnh sửa</a>
+                              <a class="dropdown-item text-danger" href="#">Xóa</a>
+                            </div>
+                          </div> <!-- dropdown //end -->
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>2323</td>
+                        <td><b>Leslie Alexander</b></td>
+                        <td>leslie@example.com</td>
+                        <td>$46.61</td>
+                        <td><span class="badge rounded-pill alert-warning">Đang vận chuyển</span></td>
+                        <td>21.02.2020</td>
+                        <td class="text-end">
+                        
+                          <div class="dropdown">
+                            <a href="#" data-bs-toggle="dropdown" class="btn btn-light"> <i class="fas fa-ellipsis-h"></i> </a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="orderDetail.html">Xem</a>
+                              <a class="dropdown-item" href="orderEdit.html">Chỉnh sửa</a>
+                              <a class="dropdown-item text-danger" href="#">Xóa</a>
+                            </div>
+                          </div> <!-- dropdown //end -->
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>1233</td>
+                        <td><b>Esther Howard</b></td>
+                        <td>esther@example.com</td>
+                        <td>$12.00</td>
+                        <td><span class="badge rounded-pill alert-danger">Đã Hủy</span></td>
+                        <td>03.07.2020</td>
+                        <td class="text-end">
+                        
+                          <div class="dropdown">
+                            <a href="#" data-bs-toggle="dropdown" class="btn btn-light"> <i class="fas fa-ellipsis-h"></i> </a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="orderDetail.html">Xem</a>
+                              <a class="dropdown-item" href="orderEdit.html">Chỉnh sửa</a>
+                              <a class="dropdown-item text-danger" href="#">Xóa</a>
+                            </div>
+                          </div> <!-- dropdown //end -->
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>1233</td>
+                        <td><b>Esther Howard</b></td>
+                        <td>esther@example.com</td>
+                        <td>$12.00</td>
+                        <td><span class="badge rounded-pill alert-danger">Đã Hủy</span></td>
+                        <td>03.07.2020</td>
+                        <td class="text-end">
+                        
+                          <div class="dropdown">
+                            <a href="#" data-bs-toggle="dropdown" class="btn btn-light"> <i class="fas fa-ellipsis-h"></i> </a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="orderDetail.html">Xem</a>
+                              <a class="dropdown-item" href="orderEdit.html">Chỉnh sửa</a>
+                              <a class="dropdown-item text-danger" href="#">Xóa</a>
+                            </div>
+                          </div> <!-- dropdown //end -->
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2323</td>
+                        <td><b>Jenny Wilson</b></td>
+                        <td>jenny@example.com</td>
+                        <td>$589.99</td>
+                        <td><span class="badge rounded-pill alert-success">Đã Nhận</span></td>
+                        <td>22.05.2020</td>
+                        <td class="text-end">
+                        
+                          <div class="dropdown">
+                            <a href="#" data-bs-toggle="dropdown" class="btn btn-light"> <i class="fas fa-ellipsis-h"></i> </a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="orderDetail.html">Xem</a>
+                              <a class="dropdown-item" href="orderEdit.html">Chỉnh sửa</a>
+                              <a class="dropdown-item text-danger" href="#">Xóa</a>
+                            </div>
+                          </div> <!-- dropdown //end -->
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2112</td>
+                        <td><b>Marvin McKinney</b></td>
+                        <td>marvin@example.com</td>
+                        <td>$16.58</td>
+                        <td><span class="badge rounded-pill alert-success">Đã Nhận</span></td>
+                        <td>23.04.2020</td>
+                        <td class="text-end">
+                        
+                          <div class="dropdown">
+                            <a href="#" data-bs-toggle="dropdown" class="btn btn-light"> <i class="fas fa-ellipsis-h"></i> </a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="orderDetail.html">Xem</a>
+                              <a class="dropdown-item" href="orderEdit.html">Chỉnh sửa</a>
+                              <a class="dropdown-item text-danger" href="#">Xóa</a>
+                            </div>
+                          </div> <!-- dropdown //end -->
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>7897</td>
+                        <td><b>Albert Flores</b></td>
+                        <td>albert@example.com</td>
+                        <td>$10.00</td>
+                        <td><span class="badge rounded-pill alert-success">Đã Nhận</span></td>
+                        <td>13.03.2020</td>
+                        <td class="text-end">
+                        
+                          <div class="dropdown">
+                            <a href="#" data-bs-toggle="dropdown" class="btn btn-light"> <i class="fas fa-ellipsis-h"></i> </a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="orderDetail.html">Xem</a>
+                              <a class="dropdown-item" href="orderEdit.html">Chỉnh sửa</a>
+                              <a class="dropdown-item text-danger" href="#">Xóa</a>
+                            </div>
+                          </div> <!-- dropdown //end -->
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2323</td>
+                        <td><b>Wade Warren</b></td>
+                        <td>wade@example.com</td>
+                        <td>$105.55</td>
+                        <td><span class="badge rounded-pill alert-success">Đã Nhận</span></td>
+                        <td>23.09.2019</td>
+                        <td class="text-end">
+                        
+                          <div class="dropdown">
+                            <a href="#" data-bs-toggle="dropdown" class="btn btn-light"> <i class="fas fa-ellipsis-h"></i> </a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="orderDetail.html">Xem</a>
+                              <a class="dropdown-item" href="orderEdit.html">Chỉnh sửa</a>
+                              <a class="dropdown-item text-danger" href="#">Xóa</a>
+                            </div>
+                          </div> <!-- dropdown //end -->
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2324</td>
+                        <td><b>Jane Cooper</b></td>
+                        <td>jane@example.com</td>
+                        <td>$710.68</td>
+                        <td><span class="badge rounded-pill alert-success">Đã Nhận</span></td>
+                        <td>28.04.2020</td>
+                        <td class="text-end">
+                        
+                          <div class="dropdown">
+                            <a href="#" data-bs-toggle="dropdown" class="btn btn-light"> <i class="fas fa-ellipsis-h"></i> </a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="orderDetail.html">Xem</a>
+                              <a class="dropdown-item" href="orderEdit.html">Chỉnh sửa</a>
+                              <a class="dropdown-item text-danger" href="#">Xóa</a>
+                            </div>
+                          </div> <!-- dropdown //end -->
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2325</td>
+                        <td><b>Savannah Nguyen</b></td>
+                        <td>savannah@example.com</td>
+                        <td>$710.68</td>
+                        <td><span class="badge rounded-pill alert-success">Đã Nhận</span></td>
+                        <td>23.03.2020</td>
+                        <td class="text-end">
+                        
+                          <div class="dropdown">
+                            <a href="#" data-bs-toggle="dropdown" class="btn btn-light"> <i class="fas fa-ellipsis-h"></i> </a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="orderDetail.html">Xem</a>
+                              <a class="dropdown-item" href="orderEdit.html">Chỉnh sửa</a>
+                              <a class="dropdown-item text-danger" href="#">Xóa</a>
+                            </div>
+                          </div> <!-- dropdown //end -->
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2326</td>
+                        <td><b>Guy Hawkins</b></td>
+                        <td>guy@example.com</td>
+                        <td>$767.50</td>
+                        <td><span class="badge rounded-pill alert-success">Đã Nhận</span></td>
+                        <td>28.04.2020</td>
+                        <td class="text-end">
+                        
+                          <div class="dropdown">
+                            <a href="#" data-bs-toggle="dropdown" class="btn btn-light"> <i class="fas fa-ellipsis-h"></i> </a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="orderDetail.html">Xem</a>
+                              <a class="dropdown-item" href="orderEdit.html">Chỉnh sửa</a>
+                              <a class="dropdown-item text-danger" href="#">Xóa</a>
+                            </div>
+                          </div> <!-- dropdown //end -->
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2327</td>
+                        <td><b>Darrell Steward</b></td>
+                        <td>darrel@example.com</td>
+                        <td>$406.27</td>
+                        <td><span class="badge rounded-pill alert-success">Đã Nhận</span></td>
+                        <td>14.07.2020</td>
+                        <td class="text-end">
+                        
+                          <div class="dropdown">
+                            <a href="#" data-bs-toggle="dropdown" class="btn btn-light"> <i class="fas fa-ellipsis-h"></i> </a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="orderDetail.html">Xem</a>
+                              <a class="dropdown-item" href="orderEdit.html">Chỉnh sửa</a>
+                              <a class="dropdown-item text-danger" href="#">Xóa</a>
+                            </div>
+                          </div> <!-- dropdown //end -->
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2328</td>
+                        <td><b>Jane Cooper</b></td>
+                        <td>jane@example.com</td>
+                        <td>$601.13</td>
+                        <td><span class="badge rounded-pill alert-success">Đã Nhận</span></td>
+                        <td>18.03.2020</td>
+                        <td class="text-end">
+                        
+                          <div class="dropdown">
+                            <a href="#" data-bs-toggle="dropdown" class="btn btn-light"> <i class="fas fa-ellipsis-h"></i> </a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="orderDetail.html">Xem</a>
+                              <a class="dropdown-item" href="orderEdit.html">Chỉnh sửa</a>
+                              <a class="dropdown-item text-danger" href="#">Xóa</a>
+                            </div>
+                          </div> <!-- dropdown //end -->
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2329</td>
+                        <td><b>Darlene Robertson</b></td>
+                        <td>deriene@example.com</td>
+                        <td>$948.55</td>
+                        <td><span class="badge rounded-pill alert-success">Đã Nhận</span></td>
+                        <td>03.07.2020</td>
+                        <td class="text-end">
+                        
+                          <div class="dropdown">
+                            <a href="#" data-bs-toggle="dropdown" class="btn btn-light"> <i class="fas fa-ellipsis-h"></i> </a>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="orderDetail.html">Xem</a>
+                              <a class="dropdown-item" href="orderEdit.html">Chỉnh sửa</a>
+                              <a class="dropdown-item text-danger" href="#">Xóa</a>
+                            </div>
+                          </div> <!-- dropdown //end -->
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div> <!-- table-responsive //end -->
+              </div> <!-- card-body end// -->
+            </div> <!-- card end// -->
+          </section>
+        </div>
+        <!-- ========== title-wrapper end ========== -->
+      </div>
+      <!-- end container -->
+    </section>
+    <!-- ========== section end ========== -->
+
+    <!-- ========== footer start =========== -->
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="terms d-flex">
+            <a href="#0" class="text-sm">Term & Conditions</a>
+            <a href="#0" class="text-sm ms-3">Privacy & Policy</a>
+          </div>
+          <!-- end row -->
+        </div>
+        <!-- end container -->
+    </footer>
+    <!-- ========== footer end =========== -->
+  </main>
+  <!-- ======== main-wrapper end =========== -->
+
+  <!-- ========= All Javascript files linkup ======== -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

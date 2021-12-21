@@ -10,7 +10,7 @@
 
   <!-- ========== All CSS files linkup ========= -->
   <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/lineicons.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <link rel="stylesheet" href="css/main.css" />
 </head>
 
@@ -27,7 +27,7 @@
         <li class="nav-item">
           <a href="dashbroad.html">
             <span class="icon">
-              <i class="lni lni-dashboard"></i>
+              <i class="fas fa-tachometer-alt"></i>
             </span>
             <span class="text">Dashboard</span>
           </a>
@@ -35,7 +35,7 @@
         <li class="nav-item">
           <a href="#">
             <span class="icon">
-              <i class="lni lni-users"></i>
+              <i class="fas fa-users"></i>
             </span>
             <span class="text">Người dùng</span>
           </a>
@@ -43,7 +43,7 @@
         <li class="nav-item">
           <a href="#">
             <span class="icon">
-              <i class="lni lni-cart"></i>
+              <i class="fas fa-shopping-cart"></i>
             </span>
             <span class="text">Đơn Hàng</span>
           </a>
@@ -51,7 +51,7 @@
         <li class="nav-item">
           <a href="#">
             <span class="icon">
-              <i class="lni lni-tag "></i>
+              <i class="fas fa-tags"></i>
             </span>
             <span class="text">Danh Mục</span>
           </a>
@@ -59,23 +59,23 @@
         <li class="nav-item">
           <a href="#">
             <span class="icon">
-              <i class="lni lni-archive"></i>
+              <i class="fas fa-archive"></i>
             </span>
-            <span class="text">Sản phẩm</span>
+            <span class="text">Khách hàng</span>
           </a>
         </li>
         <li class="nav-item">
           <a href="#">
             <span class="icon">
-              <i class="lni lni-popup"></i>
+              <i class="fas fa-star-half-alt"></i>
             </span>
-            <span class="text">Dánh giá sản phẩm</span>
+            <span class="text">Đánh giá sảm phẩm</span>
           </a>
         </li>
         <li class="nav-item">
           <a href="#">
             <span class="icon">
-              <i class="lni lni-blogger"></i>
+              <i class="far fa-newspaper"></i>
             </span>
             <span class="text">Blog</span>
           </a>
@@ -119,7 +119,7 @@
             <div class="header-left d-flex align-items-center">
               <div class="menu-toggle-btn mr-20">
                 <button id="menu-toggle" class="main-btn btn-hover">
-                  <i class="lni lni-chevron-left me-2"></i> Menu
+                  <i class="fas fa-bars"></i> Menu
                 </button>
               </div>
             </div>
@@ -132,7 +132,7 @@
                   data-bs-toggle="dropdown" aria-expanded="false">
                   <div class="profile-info">
                     <div class="info">
-                      <h6>John Doe</h6>
+                      <h5>Big Bill</h5>
                       <div class="image">
                         <img src="images/149071.png" alt="" />
                         <span class="status"></span>
@@ -143,19 +143,11 @@
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profile">
                   <li>
                     <a href="#0">
-                      <i class="lni lni-user"></i> View Profile
+                      <i class="lni lni-user"></i> Tài khoản
                     </a>
                   </li>
                   <li>
-                    <a href="#0">
-                      <i class="lni lni-alarm"></i> Notifications
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#0"> <i class="lni lni-inbox"></i> Messages </a>
-                  </li>
-                  <li>
-                    <a href="#0"> <i class="lni lni-cog"></i> Settings </a>
+                    <a href="#0"> <i class="lni lni-inbox"></i> Tin Nhắn </a>
                   </li>
                   <li>
                     <a href="#0"> <i class="lni lni-exit"></i> Sign Out </a>
@@ -184,7 +176,7 @@
                   <a href="#0">Dashboard</a>
                 </li>
                 <li class="breadcrumb-item active" aria-current="page">
-                  Sản phẩm
+                  Người Khách hàng
                 </li>
               </ol>
 
@@ -196,345 +188,197 @@
         <div class="row">
           <section class="content-main">
             <div class="content-header">
-              <h2 class="content-title">Danh sách khách hàng</h2>
+              <h2 class="content-title">Danh sách khách hàng </h2>
               <div>
-                <a href="addUser.html" class="btn btn-success">Thêm khách hàng</a>
+                <a href="addUser.html" class="btn btn-success"></i> Thêm khách hàng</a>
               </div>
             </div>
-
             <div class="card mb-4">
               <header class="card-header">
-                <div class="row gx-3">
+                <div class="row align-items-center p-3">
                   <div class="col-lg-4 col-md-6 me-auto">
-                    <input type="text" placeholder="Tìm kiếm" class="form-control">
+                    <input type="text" placeholder="Tìm khách hàng" class="form-control">
                   </div>
-                  <div class="col-lg-2 col-md-3 col-6">
+                  <div class="col-md-2 col-6">
                     <select class="form-select">
-                      <option>Hiện thị tất cả</option>
+                      <option>Trạng Thái</option>
                       <option>Hoạt động</option>
                       <option>Không hoạt động</option>
-                      <option>Bị khóa</option>
                     </select>
                   </div>
-                  <div class="col-lg-2 col-md-3 col-6">
+                  <div class="col-md-2 col-6">
                     <select class="form-select">
-                      <option value="10">Hiển thị 10</option>
-                      <option value="20">Hiển thị 20</option>
-                      <option value="30">Hiển thị 30</option>
-                      <option value="40">Hiển thị 40</option>
+                      <option>Xếp theo thời gian</option>
+                      <option>Xếp theo ID</option>
+                      <option>Xếp theo tên</option>                    
                     </select>
                   </div>
                 </div>
               </header> <!-- card-header end// -->
               <div class="card-body">
-                <div class="table-responsive">
-                  <table class="table table-hover">
-                    <thead>
-                      <tr>
-                        <th>Khách hàng</th>
-                        <th>Email</th>
-                        <th>Trạng Thái</th>
-                        <th>Ngày Đăng Kí</th>
-                        <th class="text-end">Hành động</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td width="40%">
-                          <a href="addUser.html" class="itemside">
-                            <div class="left">
-                              <img src="images/149071.png" class="img-sm img-avatar" alt="Userpic">
-                            </div>
-                            <div class="info pl-3">
-                              <h6 class="mb-0 title">Eleanor Pena</h6>
-                              <small class="text-muted">Seller ID: #439</small>
-                            </div>
-                          </a>
-                        </td>
-                        <td>eleanor2020@example.com</td>
-                        <td><span class="badge rounded-pill alert-success" style="font-size: 1rem;">Hoạt động</span>
-                        </td>
-                        <td>08.07.2020</td>
-                        <td class="text-end">
-                          <div class="dropdown float-end">
-                            <a href="#" data-bs-toggle="dropdown" class="btn btn-light">
-                              <i class="lni lni-more"></i> </a>
-                            <div class="dropdown-menu">
+                <div class="row gx-3 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 row-cols-xxl-5">
+                  <div class="col">
+                    <div class="card card-product-grid">
+                      <a href="#" class="img-wrap m-auto"> <img src="images/149071.png" alt="Product"> </a>
+                      <div class="info-wrap">
+                        <a href="#" class="title text-truncate">Nguyễn Văn a</a>
+                        <div class="text-muted">ID: #0001</div> <!-- price.// -->
+                        <div class="price mb-2"><span class="badge rounded-pill alert-success">Hoạt động</span></div>
+                        <a href="#" data-bs-toggle="dropdown" class="btn btn-sm btn-outline-success">
+                          <i class="fas fa-pen"></i> Chỉnh sửa
+                        </a>
+                        <a href="#" data-bs-toggle="dropdown" class="btn btn-sm btn-outline-danger">
+                          <i class="fas fa-trash"></i></i> Xóa
+                        </a>
+                      </div>
+                    </div> <!-- card-product  end// -->
+                  </div> <!-- col.// -->
+                  <div class="col">
+                    <div class="card card-product-grid">
+                      <a href="#" class="img-wrap m-auto"> <img src="images/149071.png" alt="Product"> </a>
+                      <div class="info-wrap">
+                        <a href="#" class="title text-truncate">Nguyễn Văn a</a>
+                        <div class="text-muted">ID: #0001</div> <!-- price.// -->
+                        <div class="price mb-2"><span class="badge rounded-pill alert-success">Hoạt động</span></div>
+                        <a href="#" data-bs-toggle="dropdown" class="btn btn-sm btn-outline-success">
+                          <i class="fas fa-pen"></i> Chỉnh sửa
+                        </a>
+                        <a href="#" data-bs-toggle="dropdown" class="btn btn-sm btn-outline-danger">
+                          <i class="fas fa-trash"></i></i> Xóa
+                        </a>
+                      </div>
+                    </div> <!-- card-product  end// -->
+                  </div> <!-- col.// -->
+                  <div class="col">
+                    <div class="card card-product-grid">
+                      <a href="#" class="img-wrap m-auto"> <img src="images/149071.png" alt="Product"> </a>
+                      <div class="info-wrap">
+                        <a href="#" class="title text-truncate">Nguyễn Văn a</a>
+                        <div class="text-muted">ID: #0001</div> <!-- price.// -->
+                        <div class="price mb-2"><span class="badge rounded-pill alert-success">Hoạt động</span></div>
+                        <a href="#" data-bs-toggle="dropdown" class="btn btn-sm btn-outline-success">
+                          <i class="fas fa-pen"></i> Chỉnh sửa
+                        </a>
+                        <a href="#" data-bs-toggle="dropdown" class="btn btn-sm btn-outline-danger">
+                          <i class="fas fa-trash"></i></i> Xóa
+                        </a>
+                      </div>
+                    </div> <!-- card-product  end// -->
+                  </div> <!-- col.// -->
 
-                              <a class="dropdown-item" href="addUser.html">Chỉnh sửa</a>
-                              <a class="dropdown-item text-danger" href="#">Xóa</a>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td width="40%">
-                          <a href="addUser.html" class="itemside">
-                            <div class="left">
-                              <img src="images/149071.png" class="img-sm img-avatar" alt="Userpic">
-                            </div>
-                            <div class="info pl-3">
-                              <h6 class="mb-0 title">Mary Monasa</h6>
-                              <small class="text-muted">Seller ID: #129</small>
-                            </div>
-                          </a>
-                        </td>
-                        <td>monalisa@example.com</td>
-                        <td><span class="badge rounded-pill alert-success" style="font-size: 1rem;">Hoạt động</span>
-                        </td>
-                        <td>11.07.2020</td>
-                        <td class="text-end">
-                          <div class="dropdown float-end">
-                            <a href="#" data-bs-toggle="dropdown" class="btn btn-light">
-                              <i class="lni lni-more"></i> </a>
-                            <div class="dropdown-menu">
+                  <div class="col">
+                    <div class="card card-product-grid">
+                      <a href="#" class="img-wrap m-auto"> <img src="images/149071.png" alt="Product"> </a>
+                      <div class="info-wrap">
+                        <a href="#" class="title text-truncate">Nguyễn Văn a</a>
+                        <div class="text-muted">ID: #0001</div> <!-- price.// -->
+                        <div class="price mb-2"><span class="badge rounded-pill alert-success">Hoạt động</span></div>
+                        <a href="#" data-bs-toggle="dropdown" class="btn btn-sm btn-outline-success">
+                          <i class="fas fa-pen"></i> Chỉnh sửa
+                        </a>
+                        <a href="#" data-bs-toggle="dropdown" class="btn btn-sm btn-outline-danger">
+                          <i class="fas fa-trash"></i></i> Xóa
+                        </a>
+                      </div>
+                    </div> <!-- card-product  end// -->
+                  </div> <!-- col.// -->
+                  <div class="col">
+                    <div class="card card-product-grid">
+                      <a href="#" class="img-wrap m-auto"> <img src="images/149071.png" alt="Product"> </a>
+                      <div class="info-wrap">
+                        <a href="#" class="title text-truncate">Nguyễn Văn a</a>
+                        <div class="text-muted">ID: #0001</div> <!-- price.// -->
+                        <div class="price mb-2"><span class="badge rounded-pill alert-success">Hoạt động</span></div>
+                        <a href="#" data-bs-toggle="dropdown" class="btn btn-sm btn-outline-success">
+                          <i class="fas fa-pen"></i> Chỉnh sửa
+                        </a>
+                        <a href="#" data-bs-toggle="dropdown" class="btn btn-sm btn-outline-danger">
+                          <i class="fas fa-trash"></i></i> Xóa
+                        </a>
+                      </div>
+                    </div> <!-- card-product  end// -->
+                  </div> <!-- col.// -->
+                  <div class="col">
+                    <div class="card card-product-grid">
+                      <a href="#" class="img-wrap m-auto"> <img src="images/149071.png" alt="Product"> </a>
+                      <div class="info-wrap">
+                        <a href="#" class="title text-truncate">Nguyễn Văn a</a>
+                        <div class="text-muted">ID: #0001</div> <!-- price.// -->
+                        <div class="price mb-2"><span class="badge rounded-pill alert-success">Hoạt động</span></div>
+                        <a href="#" data-bs-toggle="dropdown" class="btn btn-sm btn-outline-success">
+                          <i class="fas fa-pen"></i> Chỉnh sửa
+                        </a>
+                        <a href="#" data-bs-toggle="dropdown" class="btn btn-sm btn-outline-danger">
+                          <i class="fas fa-trash"></i></i> Xóa
+                        </a>
+                      </div>
+                    </div> <!-- card-product  end// -->
+                  </div> <!-- col.// -->
+                  <div class="col">
+                    <div class="card card-product-grid">
+                      <a href="#" class="img-wrap m-auto"> <img src="images/149071.png" alt="Product"> </a>
+                      <div class="info-wrap">
+                        <a href="#" class="title text-truncate">Nguyễn Văn a</a>
+                        <div class="text-muted">ID: #0001</div> <!-- price.// -->
+                        <div class="price mb-2"><span class="badge rounded-pill alert-success">Hoạt động</span></div>
+                        <a href="#" data-bs-toggle="dropdown" class="btn btn-sm btn-outline-success">
+                          <i class="fas fa-pen"></i> Chỉnh sửa
+                        </a>
+                        <a href="#" data-bs-toggle="dropdown" class="btn btn-sm btn-outline-danger">
+                          <i class="fas fa-trash"></i></i> Xóa
+                        </a>
+                      </div>
+                    </div> <!-- card-product  end// -->
+                  </div> <!-- col.// -->
+                  <div class="col">
+                    <div class="card card-product-grid">
+                      <a href="#" class="img-wrap m-auto"> <img src="images/149071.png" alt="Product"> </a>
+                      <div class="info-wrap">
+                        <a href="#" class="title text-truncate">Nguyễn Văn a</a>
+                        <div class="text-muted">ID: #0001</div> <!-- price.// -->
+                        <div class="price mb-2"><span class="badge rounded-pill alert-success">Hoạt động</span></div>
+                        <a href="#" data-bs-toggle="dropdown" class="btn btn-sm btn-outline-success">
+                          <i class="fas fa-pen"></i> Chỉnh sửa
+                        </a>
+                        <a href="#" data-bs-toggle="dropdown" class="btn btn-sm btn-outline-danger">
+                          <i class="fas fa-trash"></i></i> Xóa
+                        </a>
+                      </div>
+                    </div> <!-- card-product  end// -->
+                  </div> <!-- col.// -->
 
-                              <a class="dropdown-item" href="addUser.html">Chỉnh sửa</a>
-                              <a class="dropdown-item text-danger" href="#">Xóa</a>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td width="40%">
-                          <a href="addUser.html" class="itemside">
-                            <div class="left">
-                              <img src="images/149071.png" class="img-sm img-avatar" alt="Userpic">
-                            </div>
-                            <div class="info pl-3">
-                              <h6 class="mb-0 title">Jonatan Ive</h6>
-                              <small class="text-muted">Seller ID: #400</small>
-                            </div>
-                          </a>
-                        </td>
-                        <td>mrjohn@example.com</td>
-                        <td><span class="badge rounded-pill alert-success" style="font-size: 1rem;">Hoạt động</span>
-                        </td>
-                        <td>08.07.2020</td>
-                        <td class="text-end">
-                          <div class="dropdown float-end">
-                            <a href="#" data-bs-toggle="dropdown" class="btn btn-light">
-                              <i class="lni lni-more"></i> </a>
-                            <div class="dropdown-menu">
-
-                              <a class="dropdown-item" href="addUser.html">Chỉnh sửa</a>
-                              <a class="dropdown-item text-danger" href="#">Xóa</a>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td width="40%">
-                          <a href="addUser.html" class="itemside">
-                            <div class="left">
-                              <img src="images/149071.png" class="img-sm img-avatar" alt="Userpic">
-                            </div>
-                            <div class="info pl-3">
-                              <h6 class="mb-0 title">Eleanor Pena</h6>
-                              <small class="text-muted">Seller ID: #439</small>
-                            </div>
-                          </a>
-                        </td>
-                        <td>eleanor2020@example.com</td>
-                        <td><span class="badge rounded-pill alert-danger" style="font-size: 1rem;">Không Hoạt
-                            động</span></td>
-                        <td>08.07.2020</td>
-                        <td class="text-end">
-                          <div class="dropdown float-end">
-                            <a href="#" data-bs-toggle="dropdown" class="btn btn-light">
-                              <i class="lni lni-more"></i> </a>
-                            <div class="dropdown-menu">
-                              <a class="dropdown-item" href="addUser.html">Chỉnh sửa</a>
-                              <a class="dropdown-item text-danger" href="#">Xóa</a>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td width="40%">
-                          <a href="addUser.html" class="itemside">
-                            <div class="left">
-                              <img src="images/149071.png" class="img-sm img-avatar" alt="Userpic">
-                            </div>
-                            <div class="info pl-3">
-                              <h6 class="mb-0 title">Albert Pushkin</h6>
-                              <small class="text-muted">Seller ID: #439</small>
-                            </div>
-                          </a>
-                        </td>
-                        <td>someone@mymail.com</td>
-                        <td><span class="badge rounded-pill alert-success" style="font-size: 1rem;">Hoạt động</span>
-                        </td>
-                        <td>20.11.2019</td>
-                        <td class="text-end">
-                          <div class="dropdown float-end">
-                            <a href="#" data-bs-toggle="dropdown" class="btn btn-light">
-                              <i class="lni lni-more"></i> </a>
-                            <div class="dropdown-menu">
-
-                              <a class="dropdown-item" href="addUser.html">Chỉnh sửa</a>
-                              <a class="dropdown-item text-danger" href="#">Xóa</a>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td width="40%">
-                          <a href="addUser.html" class="itemside">
-                            <div class="left">
-                              <img src="images/149071.png" class="img-sm img-avatar" alt="Userpic">
-                            </div>
-                            <div class="info pl-3">
-                              <h6 class="mb-0 title">Alexandra Pena</h6>
-                              <small class="text-muted">Seller ID: #439</small>
-                            </div>
-                          </a>
-                        </td>
-                        <td>eleanor2020@example.com</td>
-                        <td><span class="badge rounded-pill alert-danger" style="font-size: 1rem;">Không Hoạt
-                            động</span></td>
-                        <td>08.07.2020</td>
-                        <td class="text-end">
-                          <div class="dropdown float-end">
-                            <a href="#" data-bs-toggle="dropdown" class="btn btn-light">
-                              <i class="lni lni-more"></i> </a>
-                            <div class="dropdown-menu">
-
-                              <a class="dropdown-item" href="addUser.html">Chỉnh sửa</a>
-                              <a class="dropdown-item text-danger" href="#">Xóa</a>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td width="40%">
-                          <a href="addUser.html" class="itemside">
-                            <div class="left">
-                              <img src="images/149071.png" class="img-sm img-avatar" alt="Userpic">
-                            </div>
-                            <div class="info pl-3">
-                              <h6 class="mb-0 title">Eleanor Pena</h6>
-                              <small class="text-muted">Seller ID: #439</small>
-                            </div>
-                          </a>
-                        </td>
-                        <td>eleanor2020@example.com</td>
-                        <td><span class="badge rounded-pill alert-danger" style="font-size: 1rem;">Không Hoạt
-                            động</span></td>
-                        <td>08.07.2020</td>
-                        <td class="text-end">
-                          <div class="dropdown float-end">
-                            <a href="#" data-bs-toggle="dropdown" class="btn btn-light">
-                              <i class="lni lni-more"></i> </a>
-                            <div class="dropdown-menu">
-
-                              <a class="dropdown-item" href="addUser.html">Chỉnh sửa</a>
-                              <a class="dropdown-item text-danger" href="#">Xóa</a>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td width="40%">
-                          <a href="addUser.html" class="itemside">
-                            <div class="left">
-                              <img src="images/149071.png" class="img-sm img-avatar" alt="Userpic">
-                            </div>
-                            <div class="info pl-3">
-                              <h6 class="mb-0 title">Alex Pushkina</h6>
-                              <small class="text-muted">Seller ID: #439</small>
-                            </div>
-                          </a>
-                        </td>
-                        <td>alex@gmail.org</td>
-                        <td><span class="badge rounded-pill alert-success" style="font-size: 1rem;">Hoạt động</span>
-                        </td>
-                        <td>08.07.2020</td>
-                        <td class="text-end">
-                          <div class="dropdown float-end">
-                            <a href="#" data-bs-toggle="dropdown" class="btn btn-light">
-                              <i class="lni lni-more"></i> </a>
-                            <div class="dropdown-menu">
-
-                              <a class="dropdown-item" href="addUser.html">Chỉnh sửa</a>
-                              <a class="dropdown-item text-danger" href="#">Xóa</a>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td width="40%">
-                          <a href="addUser.html" class="itemside">
-                            <div class="left">
-                              <img src="images/149071.png" class="img-sm img-avatar" alt="Userpic">
-                            </div>
-                            <div class="info pl-3">
-                              <h6 class="mb-0 title">Eleanor Pena</h6>
-                              <small class="text-muted">Seller ID: #439</small>
-                            </div>
-                          </a>
-                        </td>
-                        <td>eleanor2020@example.com</td>
-                        <td><span class="badge rounded-pill alert-success" style="font-size: 1rem;">Hoạt động</span>
-                        </td>
-                        <td>08.07.2020</td>
-                        <td class="text-end">
-                          <div class="dropdown float-end">
-                            <a href="#" data-bs-toggle="dropdown" class="btn btn-light">
-                              <i class="lni lni-more"></i> </a>
-                            <div class="dropdown-menu">
-
-                              <a class="dropdown-item" href="addUser.html">Chỉnh sửa</a>
-                              <a class="dropdown-item text-danger" href="#">Xóa</a>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td width="40%">
-                          <a href="addUser.html" class="itemside">
-                            <div class="left">
-                              <img src="images/149071.png" class="img-sm img-avatar" alt="Userpic">
-                            </div>
-                            <div class="info pl-3">
-                              <h6 class="mb-0 title">Eleanor Pena</h6>
-                              <small class="text-muted">Seller ID: #439</small>
-                            </div>
-                          </a>
-                        </td>
-                        <td>eleanor2020@example.com</td>
-                        <td><span class="badge rounded-pill alert-success" style="font-size: 1rem;">Hoạt động</span>
-                        </td>
-                        <td>08.07.2020</td>
-                        <td class="text-end">
-                          <div class="dropdown float-end">
-                            <a href="#" data-bs-toggle="dropdown" class="btn btn-light">
-                              <i class="lni lni-more"></i> </a>
-                            <div class="dropdown-menu">
-
-                              <a class="dropdown-item" href="addUser.html">Chỉnh sửa</a>
-                              <a class="dropdown-item text-danger" href="#">Xóa</a>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table> <!-- table-responsive.// -->
-                  <nav class="float-end mt-4" aria-label="Page navigation">
-                    <ul class="pagination">
-                      <li class="page-item disabled"><a class="page-link" href="#">Trước</a></li>
-                      <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                      <li class="page-item"><a class="page-link" href="#">2</a></li>
-                      <li class="page-item"><a class="page-link" href="#">3</a></li>
-                      <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                    </ul>
-                  </nav>
+                  <div class="col">
+                    <div class="card card-product-grid">
+                      <a href="#" class="img-wrap m-auto"> <img src="images/149071.png" alt="Product"> </a>
+                      <div class="info-wrap">
+                        <a href="#" class="title text-truncate">Nguyễn Văn a</a>
+                        <div class="text-muted">ID: #0001</div> <!-- price.// -->
+                        <div class="price mb-2"><span class="badge rounded-pill alert-success">Hoạt động</span></div>
+                        <a href="#" data-bs-toggle="dropdown" class="btn btn-sm btn-outline-success">
+                          <i class="fas fa-pen"></i> Chỉnh sửa
+                        </a>
+                        <a href="#" data-bs-toggle="dropdown" class="btn btn-sm btn-outline-danger">
+                          <i class="fas fa-trash"></i></i> Xóa
+                        </a>
+                      </div>
+                    </div> <!-- card-product  end// -->
+                  </div> <!-- col.// -->
                 </div>
+                <nav class="float-end mt-4" aria-label="Page navigation">
+                  <ul class="pagination">
+                    <li class="page-item disabled "><a class="page-link" href="#">Trước</a></li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Sau</a></li>
+                  </ul>
+                </nav>
               </div> <!-- card-body end// -->
-            </div> <!-- card end// -->
-          </section>
-        </div>
-        <!-- end container -->
+            </div>
+        </div> <!-- card end// -->
+    </section>
+    </div>
+    <!-- end container -->
     </section>
     <!-- ========== section end ========== -->
 
