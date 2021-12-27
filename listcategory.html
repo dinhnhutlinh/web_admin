@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon" />
-  <title>Blank Page | PlainAdmin Demo</title>
+  <title>Danh sách danh mục</title>
 
   <!-- ========== All CSS files linkup ========= -->
   <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -177,143 +177,145 @@
                   <a href="#0">Dashboard</a>
                 </li>
                 <li class="breadcrumb-item active" aria-current="page">
-                  Page
+                  Danh mục
                 </li>
               </ol>
-
             </div>
             <!-- end col -->
           </div>
           <!-- end row -->
         </div>
         <div class="row">
-
-
           <section class="content-main">
             <div class="row">
-              <div class="col-9">
-                <div class="card">
-                  <div class="card-header">
+
+              <div class="card">
+                <div class="card-header ">
+                  <div class="d-flex justify-content-between">
                     <h3>Danh mục</h3>
+                    <button type="button" class="btn btn-orange" data-bs-toggle="modal" data-bs-target="#addCaterory"><i
+                        class="fas fa-plus"></i> Thêm danh mục</button>
+
                   </div>
-                  <div class="card-body">
-                    <table id="tableCat" class="table table-hover">
-                      <thead>
-                        <tr>
-                          <th>ID</th>
-                          <th>Tên danh mục</th>
-                          <th>Số sản phẩm</th>
-                          <th>Cập nhật ngày</th>
-                          <th class="text-end">Hành động</th>
-                          <th>Mô tả</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>1</td>
-                          <td>BoardGame gia đình</td>
-                          <td>10</td>
-                          <td>08.07.2020</td>
-                          <td>
-                            <button id="editBtn" class="btn btn-warning text-white">
-                              <i class="fa fa-pen" style="height: 24px;" aria-hidden="true"></i></button>
-                            <button class="btn btn-danger" onclick="deleteCat(1)">
-                              <i class="fa fa-trash" style="height: 24px;" aria-hidden="true"></i></button>
-                          </td>
-                          <th>Mô tả nhỏ</th>
-                        </tr>
-                        <tr>
-                          <td>2</td>
-                          <td>BoardGame trí tuệ</td>
-                          <td>30</td>
-                          <td>08.10.2020</td>
-                          <td>
-                            <button id="editBtn" class="btn btn-warning text-white">
-                              <i class="fa fa-pen" style="height: 24px;" aria-hidden="true"></i></button>
-                            <button class="btn btn-danger" onclick="deleteCat(1)">
-                              <i class="fa fa-trash" style="height: 24px;" aria-hidden="true"></i></button>
-                          </td>
-                          <th>Mô tả nhỏ</th>
-                        </tr>
-                        <tr>
-                          <td>3</td>
-                          <td>BoardGame thẻ bài</td>
-                          <td>22</td>
-                          <td>08.07.2020</td>
-                          <td>
-                            <button id="editBtn" class="btn btn-warning text-white">
-                              <i class="fa fa-pen" style="height: 24px;" aria-hidden="true"></i></button>
-                            <button class="btn btn-danger" onclick="deleteCat(1)">
-                              <i class="fa fa-trash" style="height: 24px;" aria-hidden="true"></i></button>
-                          </td>
-                          <th>Mô tả nhỏ</th>
-                        </tr>
-                        <tr>
-                          <td>4</td>
-                          <td>BoardGame Chiến thuật</td>
-                          <td>40</td>
-                          <td>08.07.2020</td>
-                          <td>
-                            <button id="editBtn" class="btn btn-warning text-white">
-                              <i class="fa fa-pen" style="height: 24px;" aria-hidden="true"></i></button>
-                            <button class="btn btn-danger" onclick="deleteCat(1)">
-                              <i class="fa fa-trash" style="height: 24px;" aria-hidden="true"></i></button>
-                          </td>
-                          <th>Mô tả nhỏ</th>
-                        </tr>
-                        <tr>
-                          <td>5</td>
-                          <td>Các loại cờ</td>
-                          <td>10</td>
-                          <td>08.07.2020</td>
-                          <td>
-                            <button id="editBtn" class="btn btn-warning text-white">
-                              <i class="fa fa-pen" style="height: 24px;" aria-hidden="true"></i></button>
-                            <button class="btn btn-danger" onclick="deleteCat(1)">
-                              <i class="fa fa-trash" style="height: 24px;" aria-hidden="true"></i></button>
-                          </td>
-                          <th>Mô tả nhỏ</th>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div> <!-- card-body end// -->
-                </div>
-              </div> <!-- card end// -->
-              <div class="col-3">
-                <div class="card">
-                  <div class="card-header bg-white">
-                    <h2>Danh mục</h2>
-                  </div>
-                  <div class="card-body">
-                    <div class="mb-3">
-                      <label for="#id" class="labels">ID Danh mục</label>
-                      <fieldset disabled>
-                        <input id="idCat" type="text" class="form-control disabled" placeholder="ID" value="">
-                      </fieldset>
-                    </div>
-                    <div class="mb-3">
-                      <label for="#id" class="labels">Tên danh mục</label>
-                      <input id="nameCat" type="text" class="form-control" placeholder="Danh Mục" value="">
-                    </div>
-                    <div class="mb-3">
-                      <label class="form-label" for="textArea1">Mô tả Danh Mục</label>
-                      <textarea id="despCat" class="form-control" rows="6"></textarea>
-                    </div>
-                    <div>
-                      <button class="btn btn-success" onclick="saveCat()"> Lưu </button>
-                      <button class="btn btn-warning text-white" onclick="reset()"> Đặt lại</button>
+                  <div class="modal fade" id="addCaterory" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="catLabel">Thêm danh mục</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="mb-3">
+                            <label for="#id" class="labels">ID Danh mục</label>
+                            <fieldset disabled>
+                              <input id="idCat" type="text" class="form-control disabled" placeholder="ID" value="">
+                            </fieldset>
+                          </div>
+                          <div class="mb-3">
+                            <label for="#id" class="labels">Tên danh mục</label>
+                            <input id="nameCat" type="text" class="form-control" placeholder="Danh Mục" value="">
+                          </div>
+                          <div class="mb-3">
+                            <label class="form-label" for="textArea1">Mô tả Danh Mục</label>
+                            <textarea id="despCat" class="form-control" rows="6"></textarea>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-orange">Lưu</button>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
+                <div class="card-body">
+                  <table id="tableCat" class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th>ID</th>
+                        <th>Tên danh mục</th>
+                        <th>Số sản phẩm</th>
+                        <th>Cập nhật ngày</th>
+                        <th class="text-end">Hành động</th>
+                        <th>Mô tả</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>BoardGame gia đình</td>
+                        <td>10</td>
+                        <td>08.07.2020</td>
+                        <td>
+                          <button id="editBtn" class="btn btn-warning text-white">
+                            <i class="fa fa-pen" style="height: 24px;" aria-hidden="true"></i></button>
+                          <button class="btn btn-danger" onclick="deleteCat(1)">
+                            <i class="fa fa-trash" style="height: 24px;" aria-hidden="true"></i></button>
+                        </td>
+                        <th>Mô tả nhỏ</th>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>BoardGame trí tuệ</td>
+                        <td>30</td>
+                        <td>08.10.2020</td>
+                        <td>
+                          <button id="editBtn" class="btn btn-warning text-white">
+                            <i class="fa fa-pen" style="height: 24px;" aria-hidden="true"></i></button>
+                          <button class="btn btn-danger" onclick="deleteCat(1)">
+                            <i class="fa fa-trash" style="height: 24px;" aria-hidden="true"></i></button>
+                        </td>
+                        <th>Mô tả nhỏ</th>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>BoardGame thẻ bài</td>
+                        <td>22</td>
+                        <td>08.07.2020</td>
+                        <td>
+                          <button id="editBtn" class="btn btn-warning text-white">
+                            <i class="fa fa-pen" style="height: 24px;" aria-hidden="true"></i></button>
+                          <button class="btn btn-danger" onclick="deleteCat(1)">
+                            <i class="fa fa-trash" style="height: 24px;" aria-hidden="true"></i></button>
+                        </td>
+                        <th>Mô tả nhỏ</th>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>BoardGame Chiến thuật</td>
+                        <td>40</td>
+                        <td>08.07.2020</td>
+                        <td>
+                          <button id="editBtn" class="btn btn-warning text-white">
+                            <i class="fa fa-pen" style="height: 24px;" aria-hidden="true"></i></button>
+                          <button class="btn btn-danger" onclick="deleteCat(1)">
+                            <i class="fa fa-trash" style="height: 24px;" aria-hidden="true"></i></button>
+                        </td>
+                        <th>Mô tả nhỏ</th>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td>Các loại cờ</td>
+                        <td>10</td>
+                        <td>08.07.2020</td>
+                        <td>
+                          <button id="editBtn" class="btn btn-warning text-white">
+                            <i class="fa fa-pen" style="height: 24px;" aria-hidden="true"></i></button>
+                          <button class="btn btn-danger" onclick="deleteCat(1)">
+                            <i class="fa fa-trash" style="height: 24px;" aria-hidden="true"></i></button>
+                        </td>
+                        <th>Mô tả nhỏ</th>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div> <!-- card-body end// -->
               </div>
-            </div>
+            </div> <!-- card end// -->
         </div>
       </div>
       <!-- end container -->
     </section>
     <!-- ========== section end ========== -->
-
-    UserDetail
   </main>
 
   <!-- ========= All Javascript files linkup ======== -->
@@ -324,6 +326,7 @@
   <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"></script>
   <script>
     var table;
+    var myModalEl = document.getElementById('addCaterory')
     $(document).ready(function () {
       table = $('#tableCat').DataTable({
         searching: false,
@@ -356,28 +359,26 @@
       });
       $('#tableCat tbody').on('click', '.btn.btn-warning', function () {
         var data = table.row($(this).parents('tr')).data();
+        $('#catLabel').html("Sửa danh mục");
         $('#idCat').val(data[0]);
         $('#nameCat').val(data[1]);
         $('#despCat').val(data[5]);
+        $('#addCaterory').modal('show');
       });
     });
+
+
+    myModalEl.addEventListener('hidden.bs.modal', function (event) {
+
+      $('#catLabel').html("Thêm danh mục")
+      $('#idCat').val("");
+      $('#nameCat').val("");
+      $('#despCat').val("");
+    })
     function deleteCat(id) {
       if (confirm("Press a button!") === true) {
         alert("Da xoa");
       }
-    }
-
-
-    function saveCat() {
-      var id = $('#idCat').val();
-      var name = $('#nameCat').val();
-      var desp = $('#despCat').val();
-      alert('Đã thêm danh mục ' + name);
-    }
-    function reset() {
-      $('#idCat').val("");
-      $('#nameCat').val("");
-      $('#despCat').val("");
     }
   </script>
 </body>

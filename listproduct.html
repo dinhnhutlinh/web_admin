@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon" />
-  <title>Blank Page | PlainAdmin Demo</title>
+  <title>Danh sách sản phẩm</title>
 
   <!-- ========== All CSS files linkup ========= -->
   <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -188,43 +188,54 @@
         </div>
         <div class="row">
           <section class="content-main">
-            <div class="content-header">
-              <h2 class="content-title">Danh sách sản phẩm </h2>
-              <div>
-                <a href="#" class="btn btn-success"></i> Thêm sản phẩm</a>
-              </div>
-            </div>
             <div class="card mb-4">
               <div class="card">
+                <div class="card-header">
+                  <div class="d-flex justify-content-between">
+                    <h3 class="content-title">Danh sách sản phẩm </h3>
+                    <div>
+                      <a href="addProduct.html" class="btn btn-success"></i> Thêm sản phẩm</a>
+                    </div>
+                  </div>
+                </div>
                 <div class="card-body">
                   <table id="productTable" class="table table-hover pt-3">
                     <thead>
                       <th>#ID</th>
-                      <th>Sản phẩm</th>
+                      <th>Ảnh</th>
+                      <th class="w-25">Sản phẩm</th>
                       <th>Giá</th>
-                      <th>Danh mục</th>
                       <th>Số lượng</th>
-                      <th>Trạng thái</th>
+                      <th>Nhà phát hành</th>
                       <th class="text-end">Hành động</th>
                     </thead>
                     <tbody>
                       <tr>
                         <td>1</td>
+                        <td><img src="images/product/Yêu Nhầm F.A/5671556771025.jpg" class="img-sm" alt=""></td>
                         <td>
-                          <div class="d-flex align-items-center"><img src="images/ji81620191852.png" class="img-sm"
-                              alt="">
-                            <h6 class="p-3"><a href="addProduct.html">Cuộc đua ngôi sao</a></h6>
-                          </div>
+                          <a href="addProduct.html">Yêu Nhầm F.A</a></h6>
                         </td>
                         <td>150000 VND</td>
-                        <td>BroadGame giải trí</td>
                         <td>300</td>
+                        <td>BroadGame VN</td>
                         <td>
-                          <span class="badge rounded-pill alert-success">Active</span>
+                          <a href="addProduct.html" class="btn btn-warning text-white"><i class="fas fa-pen"></i></a>
+                          <button class="btn btn-danger"><i class="fas fa-trash"></i></button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td><img src="images/product/Boardgame Ma Sói Việt Hóa/untitled-6509.jpg" class="img-sm" alt="">
                         </td>
                         <td>
-                          <button class="btn btn-success"><i class="fas fa-eye"></i></button>
-                          <button class="btn btn-warning text-white"><i class="fas fa-pen"></i></button>
+                          <a href="addProduct.html">Boardgame Ma Sói Việt Hóa</a></h6>
+                        </td>
+                        <td>150000 VND</td>
+                        <td>300</td>
+                        <td>BroadGame VN</td>
+                        <td>
+                          <a href="addProduct.html" class="btn btn-warning text-white"><i class="fas fa-pen"></i></a>
                           <button class="btn btn-danger"><i class="fas fa-trash"></i></button>
                         </td>
                       </tr>
@@ -240,10 +251,7 @@
     <!-- end container -->
     </section>
     <!-- ========== section end ========== -->
-
-    UserDetail
   </main>
-  <!-- ======== main-wrapper end =========== -->
 
   <!-- ========= All Javascript files linkup ======== -->
   <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
@@ -276,6 +284,7 @@
           { "className": "text-end", "targets": 6 },
         ],
       });
+     
     });
   </script>
 </body>

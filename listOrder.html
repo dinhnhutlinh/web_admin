@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon" />
-  <title>Blank Page | PlainAdmin Demo</title>
+  <title>Danh sách đơn hàng</title>
 
   <!-- ========== All CSS files linkup ========= -->
   <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -188,18 +188,17 @@
         </div>
         <div class="row">
           <section class="content-main">
-
-            <div class="content-header">
-              <h2 class="content-title">Đơn Hàng</h2>
-            </div>
             <div class="card mb-4">
+              <div class="card-header">
+                <h3 class="content-title">Danh sách đơn Hàng</h3>
+              </div>
               <div class="card-body">
                 <table id="orderTable" class="table table-hover pt3">
                   <thead>
-                    <tr>
+                    <tr class="pt-3">
                       <th>Mã đơn hàng</th>
                       <th scope="col">Tên khách hàng</th>
-                      <th scope="col">Email</th>
+                      <th scope="col">Số điện thoại</th>
                       <th scope="col">Tổng tiền</th>
                       <th scope="col">Trạng thái</th>
                       <th scope="col">Ngày đặt</th>
@@ -208,10 +207,10 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td>0901</td>
-                      <td><b>Marvin McKinney</b></td>
-                      <td>marvin@example.com</td>
-                      <td>$9.00</td>
+                      <td>1</td>
+                      <td><b>Nguyễn Văn A</b></td>
+                      <td>039399040</td>
+                      <td>113000 </td>
                       <td><span class="badge rounded-pill alert-warning">Đang vận chuyển</span></td>
                       <td>03.12.2020</td>
                       <td class="text-end">
@@ -219,24 +218,21 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>2323</td>
-                      <td><b>Leslie Alexander</b></td>
-                      <td>leslie@example.com</td>
-                      <td>$46.61</td>
+                      <td>2</td>
+                      <td><b>Nguyễn Văn B</b></td>
+                      <td>03784892</td>
+                      <td>460000 </td>
                       <td><span class="badge rounded-pill alert-warning">Đang vận chuyển</span></td>
                       <td>21.02.2020</td>
                       <td class="text-end">
-
-
                         <a href="orderDetail.html" class="btn btn-warning text-white"><i class="fas fa-pen"></i></a>
-
                       </td>
                     </tr>
                     <tr>
-                      <td>1233</td>
-                      <td><b>Esther Howard</b></td>
-                      <td>esther@example.com</td>
-                      <td>$12.00</td>
+                      <td>3</td>
+                      <td><b>Nguyễn Văn C </b></td>
+                      <td>033372346</td>
+                      <td>1200000 </td>
                       <td><span class="badge rounded-pill alert-danger">Đã Hủy</span></td>
                       <td>03.07.2020</td>
                       <td class="text-end">
@@ -244,38 +240,32 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>1233</td>
-                      <td><b>Esther Howard</b></td>
-                      <td>esther@example.com</td>
-                      <td>$12.00</td>
+                      <td>4</td>
+                      <td><b>Nguyễn Văn D</b></td>
+                      <td>037637264</td>
+                      <td>312000 </td>
                       <td><span class="badge rounded-pill alert-danger">Đã Hủy</span></td>
                       <td>03.07.2020</td>
                       <td class="text-end">
-
-
                         <a href="orderDetail.html" class="btn btn-warning text-white"><i class="fas fa-pen"></i></a>
-
                       </td>
                     </tr>
                     <tr>
-                      <td>2323</td>
-                      <td><b>Jenny Wilson</b></td>
-                      <td>jenny@example.com</td>
-                      <td>$589.99</td>
+                      <td>5</td>
+                      <td><b>Nguyễn Văn C</b></td>
+                      <td>0329478377</td>
+                      <td>589099 </td>
                       <td><span class="badge rounded-pill alert-success">Đã Nhận</span></td>
                       <td>22.05.2020</td>
                       <td class="text-end">
-
-
                         <a href="orderDetail.html" class="btn btn-warning text-white"><i class="fas fa-pen"></i></a>
-
                       </td>
                     </tr>
                     <tr>
-                      <td>2112</td>
-                      <td><b>Marvin McKinney</b></td>
-                      <td>marvin@example.com</td>
-                      <td>$16.58</td>
+                      <td>6</td>
+                      <td><b>Nguyễn Văn Tào</b></td>
+                      <td>067367283</td>
+                      <td>165800</td>
                       <td><span class="badge rounded-pill alert-success">Đã Nhận</span></td>
                       <td>23.04.2020</td>
                       <td class="text-end">
@@ -283,114 +273,91 @@
                       </td>
                     </tr>
                     <tr>
-                      <td>7897</td>
-                      <td><b>Albert Flores</b></td>
-                      <td>albert@example.com</td>
-                      <td>$10.00</td>
+                      <td>7</td>
+                      <td><b>Nguyễn Văn T</b></td>
+                      <td>08324723647</td>
+                      <td>100000</td>
                       <td><span class="badge rounded-pill alert-success">Đã Nhận</span></td>
                       <td>13.03.2020</td>
                       <td class="text-end">
-
-
                         <a href="orderDetail.html" class="btn btn-warning text-white"><i class="fas fa-pen"></i></a>
-
                       </td>
                     </tr>
                     <tr>
-                      <td>2323</td>
-                      <td><b>Wade Warren</b></td>
-                      <td>wade@example.com</td>
-                      <td>$105.55</td>
+                      <td>8</td>
+                      <td><b>Nguyễn Văn H</b></td>
+                      <td>093982378</td>
+                      <td>1055500</td>
                       <td><span class="badge rounded-pill alert-success">Đã Nhận</span></td>
                       <td>23.09.2019</td>
                       <td class="text-end">
-
-
                         <a href="orderDetail.html" class="btn btn-warning text-white"><i class="fas fa-pen"></i></a>
-
                       </td>
                     </tr>
                     <tr>
-                      <td>2324</td>
-                      <td><b>Jane Cooper</b></td>
-                      <td>jane@example.com</td>
-                      <td>$710.68</td>
+                      <td>9</td>
+                      <td><b>Nguyên Văn Tèo</b></td>
+                      <td>0389472383</td>
+                      <td>716800</td>
                       <td><span class="badge rounded-pill alert-success">Đã Nhận</span></td>
                       <td>28.04.2020</td>
                       <td class="text-end">
-
-
                         <a href="orderDetail.html" class="btn btn-warning text-white"><i class="fas fa-pen"></i></a>
-
                       </td>
                     </tr>
                     <tr>
-                      <td>2325</td>
+                      <td>10</td>
                       <td><b>Savannah Nguyen</b></td>
-                      <td>savannah@example.com</td>
-                      <td>$710.68</td>
+                      <td>0384783283</td>
+                      <td>971000</td>
                       <td><span class="badge rounded-pill alert-success">Đã Nhận</span></td>
                       <td>23.03.2020</td>
                       <td class="text-end">
-
-
                         <a href="orderDetail.html" class="btn btn-warning text-white"><i class="fas fa-pen"></i></a>
-
                       </td>
                     </tr>
                     <tr>
-                      <td>2326</td>
-                      <td><b>Guy Hawkins</b></td>
-                      <td>guy@example.com</td>
-                      <td>$767.50</td>
+                      <td>11</td>
+                      <td><b>Nguyên Thi Hoa</b></td>
+                      <td>07324883</td>
+                      <td>767050</td>
                       <td><span class="badge rounded-pill alert-success">Đã Nhận</span></td>
                       <td>28.04.2020</td>
                       <td class="text-end">
-
-
                         <a href="orderDetail.html" class="btn btn-warning text-white"><i class="fas fa-pen"></i></a>
-
                       </td>
                     </tr>
                     <tr>
-                      <td>2327</td>
-                      <td><b>Darrell Steward</b></td>
-                      <td>darrel@example.com</td>
-                      <td>$406.27</td>
+                      <td>12</td>
+                      <td><b>Trần Văn Tú</b></td>
+                      <td>0783784832</td>
+                      <td>400000</td>
                       <td><span class="badge rounded-pill alert-success">Đã Nhận</span></td>
                       <td>14.07.2020</td>
                       <td class="text-end">
-
-
                         <a href="orderDetail.html" class="btn btn-warning text-white"><i class="fas fa-pen"></i></a>
-
                       </td>
                     </tr>
                     <tr>
-                      <td>2328</td>
-                      <td><b>Jane Cooper</b></td>
-                      <td>jane@example.com</td>
-                      <td>$601.13</td>
+                      <td>13</td>
+                      <td><b>Đào Văn He</b></td>
+                      <td>093483728</td>
+                      <td>600000</td>
                       <td><span class="badge rounded-pill alert-success">Đã Nhận</span></td>
                       <td>18.03.2020</td>
                       <td class="text-end">
-
-
                         <a href="orderDetail.html" class="btn btn-warning text-white"><i class="fas fa-pen"></i></a>
-
                       </td>
                     </tr>
                     <tr>
-                      <td>2329</td>
-                      <td><b>Darlene Robertson</b></td>
-                      <td>deriene@example.com</td>
-                      <td>$948.55</td>
+                      <td>14</td>
+                      <td><b>Lộc Fuho</b></td>
+                      <td>038894598</td>
+                      <td>9000000</td>
                       <td><span class="badge rounded-pill alert-success">Đã Nhận</span></td>
                       <td>03.07.2020</td>
                       <td class="text-end">
-
                         <a href="orderDetail.html" class="btn btn-warning text-white"><i class="fas fa-pen"></i></a>
-
                       </td>
                     </tr>
                   </tbody>
@@ -404,8 +371,6 @@
       <!-- end container -->
     </section>
     <!-- ========== section end ========== -->
-
-    UserDetail
   </main>
   <!-- ======== main-wrapper end =========== -->
 

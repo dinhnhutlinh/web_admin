@@ -1010,3 +1010,14 @@ td {
 .ql-editor {
   min-height: 200px;
 }
+
+.btn-orange {
+  color: #fff;
+  background-color: #fd5a32;
+  border: #fd5a32;
+}
+.btn-orange:hover {
+  color: #fff;
+  background-color: #fd5a32;
+  border: #fd5a32;
+}

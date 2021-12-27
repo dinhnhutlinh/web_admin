@@ -6,12 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon" />
-  <title>Blank Page | PlainAdmin Demo</title>
+  <title>Slider</title>
 
   <!-- ========== All CSS files linkup ========= -->
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap5.min.css">
 </head>
 
 <body>
@@ -177,7 +178,7 @@
                   <a href="#0">Dashboard</a>
                 </li>
                 <li class="breadcrumb-item active" aria-current="page">
-                  Page
+                  Slider
                 </li>
               </ol>
 
@@ -187,21 +188,149 @@
           <!-- end row -->
         </div>
         <div class="row">
+          <div class="card">
+            <div class="card-header">
+              <div class="d-flex justify-content-between">
+                <h3>Bảng Slider</h3>
+                <button type="button" class="btn btn-orange" data-bs-toggle="modal" data-bs-target="#addCaterory"><i
+                    class="fas fa-plus"></i>Thêm nhà phát hành</button>
+              </div>
+              <div class="modal fade" id="addCaterory" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="catLabel">Thêm danh mục</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="mb-3">
+                        <label for="#id" class="labels">ID Danh mục</label>
+                        <fieldset disabled>
+                          <input id="idCat" type="text" class="form-control disabled" placeholder="ID" value="">
+                        </fieldset>
+                      </div>
+                      <div class="mb-3">
+                        <label for="#id" class="labels">Tên slider</label>
+                        <input id="nameCat" type="text" class="form-control" placeholder="Danh Mục" value="">
+                      </div>
+                      <div class="mb-3">
+                        <label for="#id" class="labels">Link đến trang</label>
+                        <input id="nameCat" type="text" class="form-control" placeholder="Danh Mục" value="">
+                      </div>
+                      <div class="mb-3">
+                        <label for="title" class="form-label">Ảnh thunmail</label>
+                        <input type="file" placeholder="Nhập tên" class=" imageUpload form-control" id="title">
+                        <div class="pt-3">
+                          <div class="imageOutput position-relative shadow-lg"></div>
+                        </div>
 
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-orange">Lưu</button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <table id="tableSlider" class="table table-hover">
+                <thead>
+                  <th>ID</th>
+                  <th class="w-25">Ảnh</th>
+                  <th>Tên</th>
+                  <th>Link</th>
+                  <th class="text-end">Xóa</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td><img id="iamgeSmall" src="images/BoardStore.png" width="50%" alt=""></td>
+                    <td>Giớ thiệu BroadGame Mới</td>
+                    <td>product?id=1</td>
+                    <td>
+                      <a href="" class="btn btn-danger">Xóa</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td><img id="iamgeSmall" src="images/f31aa46c5ecc0c51c2a6f22b322f13f9.jpg" width="50%" alt=""></td>
+                    <td>Giớ thiệu BroadGame Splendor</td>
+                    <td>product?id=2</td>
+                    <td>
+                      <a href="" class="btn btn-danger">Xóa</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
         </div>
         <!-- ========== title-wrapper end ========== -->
       </div>
       <!-- end container -->
     </section>
-    <!-- ========== section end ========== -->
-
-    UserDetail
   </main>
   <!-- ======== main-wrapper end =========== -->
 
   <!-- ========= All Javascript files linkup ======== -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"></script>
+  <script>
+    $images = $('.imageOutput')
+    $(document).ready(function () {
+
+      var table = $('#tableSlider').DataTable({
+        searching: false,
+        paging: false,
+        language: {
+          processing: "đang tải",
+          search: "Tìm kiếm",
+          lengthMenu: "Số dòng hiển thị _MENU_ ",
+          info: "Bài viết từ _START_ đến _END_ trong _TOTAL_ Slider",
+          infoEmpty: "",
+          loadingRecords: "",
+          infoFiltered: "",
+          zeroRecords: "Không tìm thấy",
+          emptyTable: "Không có dữ liệu",
+          paginate: {
+            first: "Trang đầu",
+            previous: "Trang trước",
+            next: "Trang sau",
+            last: "Trang cuối"
+          },
+        },
+        columnDefs: [
+          { "className": "text-end", "targets": 4 },
+
+        ],
+      });
+      $(".imageUpload").change(function (event) {
+        readURL(this);
+      });
+
+      function readURL(input) {
+
+        if (input.files && input.files[0]) {
+
+          $.each(input.files, function () {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+              $images.append('<img src="' + e.target.result + '" style="width: 100%" />');
+              $images.append('<button type="button" class="btn-close position-absolute top-0 end-0 text-danger" onclick="removeImage()"></button>');
+            }
+            reader.readAsDataURL(this);
+          });
+
+        }
+      }
+    });
+  </script>
 </body>
 
 </html>
