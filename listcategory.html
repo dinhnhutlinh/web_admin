@@ -10,8 +10,9 @@
 
   <!-- ========== All CSS files linkup ========= -->
   <link rel="stylesheet" href="css/bootstrap.min.css" />
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap5.min.css">
 </head>
 
 <body>
@@ -186,113 +187,126 @@
           <!-- end row -->
         </div>
         <div class="row">
+
+
           <section class="content-main">
-            <div class="content-header">
-              <h2 class="content-title">Danh sách Danh mục</h2>
-              <div>
-                <a href="addCategory.html" class="btn btn-success">Thêm Danh Mục</a>
+            <div class="row">
+              <div class="col-9">
+                <div class="card">
+                  <div class="card-header">
+                    <h3>Danh mục</h3>
+                  </div>
+                  <div class="card-body">
+                    <table id="tableCat" class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th>ID</th>
+                          <th>Tên danh mục</th>
+                          <th>Số sản phẩm</th>
+                          <th>Cập nhật ngày</th>
+                          <th class="text-end">Hành động</th>
+                          <th>Mô tả</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>BoardGame gia đình</td>
+                          <td>10</td>
+                          <td>08.07.2020</td>
+                          <td>
+                            <button id="editBtn" class="btn btn-warning text-white">
+                              <i class="fa fa-pen" style="height: 24px;" aria-hidden="true"></i></button>
+                            <button class="btn btn-danger" onclick="deleteCat(1)">
+                              <i class="fa fa-trash" style="height: 24px;" aria-hidden="true"></i></button>
+                          </td>
+                          <th>Mô tả nhỏ</th>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>BoardGame trí tuệ</td>
+                          <td>30</td>
+                          <td>08.10.2020</td>
+                          <td>
+                            <button id="editBtn" class="btn btn-warning text-white">
+                              <i class="fa fa-pen" style="height: 24px;" aria-hidden="true"></i></button>
+                            <button class="btn btn-danger" onclick="deleteCat(1)">
+                              <i class="fa fa-trash" style="height: 24px;" aria-hidden="true"></i></button>
+                          </td>
+                          <th>Mô tả nhỏ</th>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>BoardGame thẻ bài</td>
+                          <td>22</td>
+                          <td>08.07.2020</td>
+                          <td>
+                            <button id="editBtn" class="btn btn-warning text-white">
+                              <i class="fa fa-pen" style="height: 24px;" aria-hidden="true"></i></button>
+                            <button class="btn btn-danger" onclick="deleteCat(1)">
+                              <i class="fa fa-trash" style="height: 24px;" aria-hidden="true"></i></button>
+                          </td>
+                          <th>Mô tả nhỏ</th>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>BoardGame Chiến thuật</td>
+                          <td>40</td>
+                          <td>08.07.2020</td>
+                          <td>
+                            <button id="editBtn" class="btn btn-warning text-white">
+                              <i class="fa fa-pen" style="height: 24px;" aria-hidden="true"></i></button>
+                            <button class="btn btn-danger" onclick="deleteCat(1)">
+                              <i class="fa fa-trash" style="height: 24px;" aria-hidden="true"></i></button>
+                          </td>
+                          <th>Mô tả nhỏ</th>
+                        </tr>
+                        <tr>
+                          <td>5</td>
+                          <td>Các loại cờ</td>
+                          <td>10</td>
+                          <td>08.07.2020</td>
+                          <td>
+                            <button id="editBtn" class="btn btn-warning text-white">
+                              <i class="fa fa-pen" style="height: 24px;" aria-hidden="true"></i></button>
+                            <button class="btn btn-danger" onclick="deleteCat(1)">
+                              <i class="fa fa-trash" style="height: 24px;" aria-hidden="true"></i></button>
+                          </td>
+                          <th>Mô tả nhỏ</th>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div> <!-- card-body end// -->
+                </div>
+              </div> <!-- card end// -->
+              <div class="col-3">
+                <div class="card">
+                  <div class="card-header bg-white">
+                    <h2>Danh mục</h2>
+                  </div>
+                  <div class="card-body">
+                    <div class="mb-3">
+                      <label for="#id" class="labels">ID Danh mục</label>
+                      <fieldset disabled>
+                        <input id="idCat" type="text" class="form-control disabled" placeholder="ID" value="">
+                      </fieldset>
+                    </div>
+                    <div class="mb-3">
+                      <label for="#id" class="labels">Tên danh mục</label>
+                      <input id="nameCat" type="text" class="form-control" placeholder="Danh Mục" value="">
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label" for="textArea1">Mô tả Danh Mục</label>
+                      <textarea id="despCat" class="form-control" rows="6"></textarea>
+                    </div>
+                    <div>
+                      <button class="btn btn-success" onclick="saveCat()"> Lưu </button>
+                      <button class="btn btn-warning text-white" onclick="reset()"> Đặt lại</button>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-
-            <div class="card mb-4">
-              <div class="card-body">
-                <div class="table-responsive">
-                  <table class="table table-hover">
-                    <thead>
-                      <tr>
-                        <th>ID</th>
-                        <th>Tên danh mục</th>
-                        <th>Số sản phẩm</th>
-                        <th>Thêm ngày</th>
-                        <th class="text-end">Hành động</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>1</td>
-                        <td>BoardGame gia đình</td>
-                        <td>10</td>
-                        <td>08.07.2020</td>
-                        <td class="text-end">
-                          <div class="dropdown float-end">
-                            <a href="#" data-bs-toggle="dropdown" class="btn btn-light">
-                              <i class="fas fa-ellipsis-h"></i> </a>
-                            <div class="dropdown-menu">
-                              <a class="dropdown-item" href="addCategory.html">Chỉnh sửa</a>
-                              <a class="dropdown-item text-danger" href="#">Xóa</a>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>2</td>
-                        <td>BoardGame trí tuệ</td>
-                        <td>30</td>
-                        <td>08.10.2020</td>
-                        <td class="text-end">
-                          <div class="dropdown float-end">
-                            <a href="#" data-bs-toggle="dropdown" class="btn btn-light">
-                              <i class="fas fa-ellipsis-h"></i> </a>
-                            <div class="dropdown-menu">
-                              <a class="dropdown-item" href="addCategory.html">Chỉnh sửa</a>
-                              <a class="dropdown-item text-danger" href="#">Xóa</a>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>3</td>
-                        <td>BoardGame thẻ bài</td>
-                        <td>22</td>
-                        <td>08.07.2020</td>
-                        <td class="text-end">
-                          <div class="dropdown float-end">
-                            <a href="#" data-bs-toggle="dropdown" class="btn btn-light">
-                              <i class="fas fa-ellipsis-h"></i> </a>
-                            <div class="dropdown-menu">
-                              <a class="dropdown-item" href="addCategory.html">Chỉnh sửa</a>
-                              <a class="dropdown-item text-danger" href="#">Xóa</a>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>4</td>
-                        <td>BoardGame Chiến thuật</td>
-                        <td>40</td>
-                        <td>08.07.2020</td>
-                        <td class="text-end">
-                          <div class="dropdown float-end">
-                            <a href="#" data-bs-toggle="dropdown" class="btn btn-light">
-                              <i class="fas fa-ellipsis-h"></i> </a>
-                            <div class="dropdown-menu">
-                              <a class="dropdown-item" href="addCategory.html">Chỉnh sửa</a>
-                              <a class="dropdown-item text-danger" href="#">Xóa</a>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>5</td>
-                        <td>Các loại cờ</td>
-                        <td>10</td>
-                        <td>08.07.2020</td>
-                        <td class="text-end">
-                          <div class="dropdown float-end">
-                            <a href="#" data-bs-toggle="dropdown" class="btn btn-light">
-                              <i class="fas fa-ellipsis-h"></i> </a>
-                            <div class="dropdown-menu">
-                              <a class="dropdown-item" href="addCategory.html">Chỉnh sửa</a>
-                              <a class="dropdown-item text-danger" href="#">Xóa</a>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table> <!-- table-responsive.// -->
-                </div>
-              </div> <!-- card-body end// -->
-            </div> <!-- card end// -->
         </div>
       </div>
       <!-- end container -->
@@ -313,11 +327,71 @@
     </footer>
     <!-- ========== footer end =========== -->
   </main>
-  <!-- ======== main-wrapper end =========== -->
 
   <!-- ========= All Javascript files linkup ======== -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"></script>
+  <script>
+    var table;
+    $(document).ready(function () {
+      table = $('#tableCat').DataTable({
+        searching: false,
+        paging: false,
+        language: {
+          processing: "đang tải",
+          search: "Tìm kiếm",
+          lengthMenu: "Số dòng hiển thị _MENU_ ",
+          info: "Bài viết từ _START_ đến _END_ trong _TOTAL_ Danh mục",
+          infoEmpty: "",
+          loadingRecords: "",
+          infoFiltered: "",
+          zeroRecords: "Không tìm thấy",
+          emptyTable: "Không có dữ liệu",
+          paginate: {
+            first: "Trang đầu",
+            previous: "Trang trước",
+            next: "Trang sau",
+            last: "Trang cuối"
+          },
+        },
+        columnDefs: [
+          { "className": "text-end", "targets": 4 },
+          {
+            "targets": [5],
+            "visible": false,
+            "searchable": false
+          },
+        ],
+      });
+      $('#tableCat tbody').on('click', '.btn.btn-warning', function () {
+        var data = table.row($(this).parents('tr')).data();
+        $('#idCat').val(data[0]);
+        $('#nameCat').val(data[1]);
+        $('#despCat').val(data[5]);
+      });
+    });
+    function deleteCat(id) {
+      if (confirm("Press a button!") === true) {
+        alert("Da xoa");
+      }
+    }
+
+
+    function saveCat() {
+      var id = $('#idCat').val();
+      var name = $('#nameCat').val();
+      var desp = $('#despCat').val();
+      alert('Đã thêm danh mục ' + name);
+    }
+    function reset() {
+      $('#idCat').val("");
+      $('#nameCat').val("");
+      $('#despCat').val("");
+    }
+  </script>
 </body>
 
 </html>

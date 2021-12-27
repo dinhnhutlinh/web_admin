@@ -5,14 +5,13 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon" />
   <title>Blank Page | PlainAdmin Demo</title>
 
   <!-- ========== All CSS files linkup ========= -->
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap5.min.css">
 </head>
 
 <body>
@@ -177,7 +176,7 @@
                   <a href="#0">Dashboard</a>
                 </li>
                 <li class="breadcrumb-item active" aria-current="page">
-                  Page
+                  Blog
                 </li>
               </ol>
 
@@ -189,161 +188,98 @@
         <div class="row">
           <div class="card">
             <div class="card-header">
-              <h3>Người dùng mới</h3>
+              <h3>Danh sách bài viết</h3>
             </div>
             <div class="card-body">
-              <table class="table table-hover">
+              <table id="tableNews" class="table table-hover">
                 <thead>
                   <tr>
                     <th>ID</th>
-                    <th style="width: 50%">Tiêu đề</th>
+                    <th class="w-50">Tiêu đề</th>
+                    <th>Người tạo</th>
                     <th>Ngày tạo</th>
                     <th class="text-end">Hành động</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>21</td>
-                    <td>Tiêu đề A</td>
-                    <td>25/02/2021</td>
-                    <td class="text-end">
-                      <div class="dropdown">
-                        <a href="#" data-bs-toggle="dropdown" class="btn btn-light">
-                          <i class="fas fa-ellipsis-h"></i> </a>
-                        <div class="dropdown-menu" style="margin: 0px;">                         
-                          <a class="dropdown-item" href="#">Chỉnh sửa</a>
-                          <a class="dropdown-item text-danger" href="#">Xóa</a>
-                        </div>
-                      </div>
-                      <!-- dropdown //end -->
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>22</td>
+                    <td>1</td>
                     <td>Tiêu đề B</td>
-                    <td>08/04/2021</td>
-                    <td class="text-end">
-                      <div class="dropdown">
-                        <a href="#" data-bs-toggle="dropdown" class="btn btn-light">
-                          <i class="fas fa-ellipsis-h"></i> </a>
-                        <div class="dropdown-menu" style="margin: 0px;">                         
-                          <a class="dropdown-item" href="#">Chỉnh sửa</a>
-                          <a class="dropdown-item text-danger" href="#">Xóa</a>
-                        </div>
-                      </div>
-                      <!-- dropdown //end -->
+                    <td>Nguyễn văn B</td>
+                    <td>25/02/2021</td>
+                    <td>
+                      <a href="blogedit.html" class="btn btn-warning"><i class="fas fa-pen"></i></a>
+                      <a href="#" class="btn btn-danger"><i class="fas fa-trash"></i></a>
                     </td>
                   </tr>
                   <tr>
-                    <td>23</td>
+                    <td>2</td>
+                    <td>Tiêu đề B</td>
+                    <td>Nguyễn văn B</td>
+                    <td>25/02/2021</td>
+                    <td>
+                      <a href="blogedit.html" class="btn btn-warning"><i class="fas fa-pen"></i></a>
+                      <a href="#" class="btn btn-danger"><i class="fas fa-trash"></i></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Tiêu đề A</td>
+                    <td>Nguyễn văn A</td>
+                    <td>25/02/2021</td>
+                    <td>
+                      <a href="blogedit.html" class="btn btn-warning"><i class="fas fa-pen"></i></a>
+                      <a href="#" class="btn btn-danger"><i class="fas fa-trash"></i></a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
                     <td>Tiêu đề C</td>
-                    <td>09/02/2021</td>
-                    <td class="text-end">
-                      <div class="dropdown">
-                        <a href="#" data-bs-toggle="dropdown" class="btn btn-light">
-                          <i class="fas fa-ellipsis-h"></i> </a>
-                        <div class="dropdown-menu" style="margin: 0px;">                         
-                          <a class="dropdown-item" href="#">Chỉnh sửa</a>
-                          <a class="dropdown-item text-danger" href="#">Xóa</a>
-                        </div>
-                      </div>
-                      <!-- dropdown //end -->
+                    <td>Nguyễn văn C</td>
+                    <td>25/02/2021</td>
+                    <td>
+                      <a href="blogedit.html" class="btn btn-warning"><i class="fas fa-pen"></i></a>
+                      <a href="#" class="btn btn-danger"><i class="fas fa-trash"></i></a>
                     </td>
                   </tr>
                   <tr>
-                    <td>24</td>
+                    <td>5</td>
                     <td>Tiêu đề D</td>
-                    <td>09/08/2021</td>
-                    <td class="text-end">
-                      <div class="dropdown">
-                        <a href="#" data-bs-toggle="dropdown" class="btn btn-light">
-                          <i class="fas fa-ellipsis-h"></i> </a>
-                        <div class="dropdown-menu" style="margin: 0px;">                         
-                          <a class="dropdown-item" href="#">Chỉnh sửa</a>
-                          <a class="dropdown-item text-danger" href="#">Xóa</a>
-                        </div>
-                      </div>
-                      <!-- dropdown //end -->
+                    <td>Nguyễn văn D</td>
+                    <td>25/02/2021</td>
+                    <td>
+                      <a href="blogedit.html" class="btn btn-warning"><i class="fas fa-pen"></i></a>
+                      <a href="#" class="btn btn-danger"><i class="fas fa-trash"></i></a>
                     </td>
                   </tr>
                   <tr>
-                    <td>25</td>
-                    <td>Tiêu đề D</td>
-                    <td>03/02/2021</td>
-                    <td class="text-end">
-                      <div class="dropdown">
-                        <a href="#" data-bs-toggle="dropdown" class="btn btn-light">
-                          <i class="fas fa-ellipsis-h"></i> </a>
-                        <div class="dropdown-menu" style="margin: 0px;">                         
-                          <a class="dropdown-item" href="#">Chỉnh sửa</a>
-                          <a class="dropdown-item text-danger" href="#">Xóa</a>
-                        </div>
-                      </div>
-                      <!-- dropdown //end -->
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>26</td>
+                    <td>6</td>
                     <td>Tiêu đề E</td>
-                    <td>24/01/2021</td>
-                    <td class="text-end">
-                      <div class="dropdown">
-                        <a href="#" data-bs-toggle="dropdown" class="btn btn-light">
-                          <i class="fas fa-ellipsis-h"></i> </a>
-                        <div class="dropdown-menu" style="margin: 0px;">                         
-                          <a class="dropdown-item" href="#">Chỉnh sửa</a>
-                          <a class="dropdown-item text-danger" href="#">Xóa</a>
-                        </div>
-                      </div>
-                      <!-- dropdown //end -->
+                    <td>Nguyễn văn E</td>
+                    <td>25/02/2021</td>
+                    <td>
+                      <a href="blogedit.html" class="btn btn-warning"><i class="fas fa-pen"></i></a>
+                      <a href="#" class="btn btn-danger"><i class="fas fa-trash"></i></a>
                     </td>
                   </tr>
                   <tr>
-                    <td>27</td>
+                    <td>7</td>
                     <td>Tiêu đề F</td>
-                    <td>18/06/2021</td>
-                    <td class="text-end">
-                      <div class="dropdown">
-                        <a href="#" data-bs-toggle="dropdown" class="btn btn-light">
-                          <i class="fas fa-ellipsis-h"></i> </a>
-                        <div class="dropdown-menu" style="margin: 0px;">                         
-                          <a class="dropdown-item" href="#">Chỉnh sửa</a>
-                          <a class="dropdown-item text-danger" href="#">Xóa</a>
-                        </div>
-                      </div>
-                      <!-- dropdown //end -->
+                    <td>Nguyễn văn F</td>
+                    <td>25/02/2021</td>
+                    <td>
+                      <a href="blogedit.html" class="btn btn-warning"><i class="fas fa-pen"></i></a>
+                      <a href="#" class="btn btn-danger"><i class="fas fa-trash"></i></a>
                     </td>
                   </tr>
                   <tr>
-                    <td>28</td>
+                    <td>8</td>
                     <td>Tiêu đề G</td>
-                    <td>03/02/2021</td>
-                    <td class="text-end">
-                      <div class="dropdown">
-                        <a href="#" data-bs-toggle="dropdown" class="btn btn-light">
-                          <i class="fas fa-ellipsis-h"></i> </a>
-                        <div class="dropdown-menu" style="margin: 0px;">                         
-                          <a class="dropdown-item" href="#">Chỉnh sửa</a>
-                          <a class="dropdown-item text-danger" href="#">Xóa</a>
-                        </div>
-                      </div>
-                      <!-- dropdown //end -->
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>29</td>
-                    <td>Tiêu đề H</td>
-                    <td>18/06/2021</td>
-                    <td class="text-end">
-                      <div class="dropdown">
-                        <a href="#" data-bs-toggle="dropdown" class="btn btn-light">
-                          <i class="fas fa-ellipsis-h"></i> </a>
-                        <div class="dropdown-menu" style="margin: 0px;">                         
-                          <a class="dropdown-item" href="#">Chỉnh sửa</a>
-                          <a class="dropdown-item text-danger" href="#">Xóa</a>
-                        </div>
-                      </div>
-                      <!-- dropdown //end -->
+                    <td>Nguyễn văn G</td>
+                    <td>25/02/2021</td>
+                    <td>
+                      <a href="blogedit.html" class="btn btn-warning"><i class="fas fa-pen"></i></a>
+                      <a href="#" class="btn btn-danger"><i class="fas fa-trash"></i></a>
                     </td>
                   </tr>
                 </tbody>
@@ -374,8 +310,37 @@
   <!-- ======== main-wrapper end =========== -->
 
   <!-- ========= All Javascript files linkup ======== -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#tableNews').DataTable({
+        language: {
+          processing: "đang tải",
+          search: "Tìm kiếm",
+          lengthMenu: "Số dòng hiển thị _MENU_ ",
+          info: "Bài viết từ _START_ đến _END_ trong _TOTAL_ bài viết",
+          infoEmpty: "",
+          loadingRecords: "",
+          infoFiltered: "",
+          zeroRecords: "Không tìm thấy",
+          emptyTable: "Không có dữ liệu",
+          paginate: {
+            first: "Trang đầu",
+            previous: "Trang trước",
+            next: "Trang sau",
+            last: "Trang cuối"
+          },
+        },
+        columnDefs: [
+          { "className": "text-end", "targets": 4 }
+        ],
+      });
+    });
+  </script>
 </body>
 
 </html>

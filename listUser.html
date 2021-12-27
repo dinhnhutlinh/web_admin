@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap5.min.css">
 </head>
 
 <body>
@@ -194,185 +195,98 @@
               </div>
             </div>
             <div class="card mb-4">
-              <header class="card-header">
-                <div class="row align-items-center p-3">
-                  <div class="col-lg-4 col-md-6 me-auto">
-                    <input type="text" placeholder="Tìm khách hàng" class="form-control">
-                  </div>
-                  <div class="col-md-2 col-6">
-                    <select class="form-select">
-                      <option>Trạng Thái</option>
-                      <option>Hoạt động</option>
-                      <option>Không hoạt động</option>
-                    </select>
-                  </div>
-                  <div class="col-md-2 col-6">
-                    <select class="form-select">
-                      <option>Xếp theo thời gian</option>
-                      <option>Xếp theo ID</option>
-                      <option>Xếp theo tên</option>                    
-                    </select>
-                  </div>
-                </div>
-              </header> <!-- card-header end// -->
               <div class="card-body">
-                <div class="row gx-3 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 row-cols-xxl-5">
-                  <div class="col">
-                    <div class="card card-product-grid">
-                      <a href="#" class="img-wrap m-auto"> <img src="images/149071.png" alt="Product"> </a>
-                      <div class="info-wrap">
-                        <a href="#" class="title text-truncate">Nguyễn Văn a</a>
-                        <div class="text-muted">ID: #0001</div> <!-- price.// -->
-                        <div class="price mb-2"><span class="badge rounded-pill alert-success">Hoạt động</span></div>
-                        <a href="#" data-bs-toggle="dropdown" class="btn btn-sm btn-outline-success">
-                          <i class="fas fa-pen"></i> Chỉnh sửa
-                        </a>
-                        <a href="#" data-bs-toggle="dropdown" class="btn btn-sm btn-outline-danger">
-                          <i class="fas fa-trash"></i></i> Xóa
-                        </a>
-                      </div>
-                    </div> <!-- card-product  end// -->
-                  </div> <!-- col.// -->
-                  <div class="col">
-                    <div class="card card-product-grid">
-                      <a href="#" class="img-wrap m-auto"> <img src="images/149071.png" alt="Product"> </a>
-                      <div class="info-wrap">
-                        <a href="#" class="title text-truncate">Nguyễn Văn a</a>
-                        <div class="text-muted">ID: #0001</div> <!-- price.// -->
-                        <div class="price mb-2"><span class="badge rounded-pill alert-success">Hoạt động</span></div>
-                        <a href="#" data-bs-toggle="dropdown" class="btn btn-sm btn-outline-success">
-                          <i class="fas fa-pen"></i> Chỉnh sửa
-                        </a>
-                        <a href="#" data-bs-toggle="dropdown" class="btn btn-sm btn-outline-danger">
-                          <i class="fas fa-trash"></i></i> Xóa
-                        </a>
-                      </div>
-                    </div> <!-- card-product  end// -->
-                  </div> <!-- col.// -->
-                  <div class="col">
-                    <div class="card card-product-grid">
-                      <a href="#" class="img-wrap m-auto"> <img src="images/149071.png" alt="Product"> </a>
-                      <div class="info-wrap">
-                        <a href="#" class="title text-truncate">Nguyễn Văn a</a>
-                        <div class="text-muted">ID: #0001</div> <!-- price.// -->
-                        <div class="price mb-2"><span class="badge rounded-pill alert-success">Hoạt động</span></div>
-                        <a href="#" data-bs-toggle="dropdown" class="btn btn-sm btn-outline-success">
-                          <i class="fas fa-pen"></i> Chỉnh sửa
-                        </a>
-                        <a href="#" data-bs-toggle="dropdown" class="btn btn-sm btn-outline-danger">
-                          <i class="fas fa-trash"></i></i> Xóa
-                        </a>
-                      </div>
-                    </div> <!-- card-product  end// -->
-                  </div> <!-- col.// -->
-
-                  <div class="col">
-                    <div class="card card-product-grid">
-                      <a href="#" class="img-wrap m-auto"> <img src="images/149071.png" alt="Product"> </a>
-                      <div class="info-wrap">
-                        <a href="#" class="title text-truncate">Nguyễn Văn a</a>
-                        <div class="text-muted">ID: #0001</div> <!-- price.// -->
-                        <div class="price mb-2"><span class="badge rounded-pill alert-success">Hoạt động</span></div>
-                        <a href="#" data-bs-toggle="dropdown" class="btn btn-sm btn-outline-success">
-                          <i class="fas fa-pen"></i> Chỉnh sửa
-                        </a>
-                        <a href="#" data-bs-toggle="dropdown" class="btn btn-sm btn-outline-danger">
-                          <i class="fas fa-trash"></i></i> Xóa
-                        </a>
-                      </div>
-                    </div> <!-- card-product  end// -->
-                  </div> <!-- col.// -->
-                  <div class="col">
-                    <div class="card card-product-grid">
-                      <a href="#" class="img-wrap m-auto"> <img src="images/149071.png" alt="Product"> </a>
-                      <div class="info-wrap">
-                        <a href="#" class="title text-truncate">Nguyễn Văn a</a>
-                        <div class="text-muted">ID: #0001</div> <!-- price.// -->
-                        <div class="price mb-2"><span class="badge rounded-pill alert-success">Hoạt động</span></div>
-                        <a href="#" data-bs-toggle="dropdown" class="btn btn-sm btn-outline-success">
-                          <i class="fas fa-pen"></i> Chỉnh sửa
-                        </a>
-                        <a href="#" data-bs-toggle="dropdown" class="btn btn-sm btn-outline-danger">
-                          <i class="fas fa-trash"></i></i> Xóa
-                        </a>
-                      </div>
-                    </div> <!-- card-product  end// -->
-                  </div> <!-- col.// -->
-                  <div class="col">
-                    <div class="card card-product-grid">
-                      <a href="#" class="img-wrap m-auto"> <img src="images/149071.png" alt="Product"> </a>
-                      <div class="info-wrap">
-                        <a href="#" class="title text-truncate">Nguyễn Văn a</a>
-                        <div class="text-muted">ID: #0001</div> <!-- price.// -->
-                        <div class="price mb-2"><span class="badge rounded-pill alert-success">Hoạt động</span></div>
-                        <a href="#" data-bs-toggle="dropdown" class="btn btn-sm btn-outline-success">
-                          <i class="fas fa-pen"></i> Chỉnh sửa
-                        </a>
-                        <a href="#" data-bs-toggle="dropdown" class="btn btn-sm btn-outline-danger">
-                          <i class="fas fa-trash"></i></i> Xóa
-                        </a>
-                      </div>
-                    </div> <!-- card-product  end// -->
-                  </div> <!-- col.// -->
-                  <div class="col">
-                    <div class="card card-product-grid">
-                      <a href="#" class="img-wrap m-auto"> <img src="images/149071.png" alt="Product"> </a>
-                      <div class="info-wrap">
-                        <a href="#" class="title text-truncate">Nguyễn Văn a</a>
-                        <div class="text-muted">ID: #0001</div> <!-- price.// -->
-                        <div class="price mb-2"><span class="badge rounded-pill alert-success">Hoạt động</span></div>
-                        <a href="#" data-bs-toggle="dropdown" class="btn btn-sm btn-outline-success">
-                          <i class="fas fa-pen"></i> Chỉnh sửa
-                        </a>
-                        <a href="#" data-bs-toggle="dropdown" class="btn btn-sm btn-outline-danger">
-                          <i class="fas fa-trash"></i></i> Xóa
-                        </a>
-                      </div>
-                    </div> <!-- card-product  end// -->
-                  </div> <!-- col.// -->
-                  <div class="col">
-                    <div class="card card-product-grid">
-                      <a href="#" class="img-wrap m-auto"> <img src="images/149071.png" alt="Product"> </a>
-                      <div class="info-wrap">
-                        <a href="#" class="title text-truncate">Nguyễn Văn a</a>
-                        <div class="text-muted">ID: #0001</div> <!-- price.// -->
-                        <div class="price mb-2"><span class="badge rounded-pill alert-success">Hoạt động</span></div>
-                        <a href="#" data-bs-toggle="dropdown" class="btn btn-sm btn-outline-success">
-                          <i class="fas fa-pen"></i> Chỉnh sửa
-                        </a>
-                        <a href="#" data-bs-toggle="dropdown" class="btn btn-sm btn-outline-danger">
-                          <i class="fas fa-trash"></i></i> Xóa
-                        </a>
-                      </div>
-                    </div> <!-- card-product  end// -->
-                  </div> <!-- col.// -->
-
-                  <div class="col">
-                    <div class="card card-product-grid">
-                      <a href="#" class="img-wrap m-auto"> <img src="images/149071.png" alt="Product"> </a>
-                      <div class="info-wrap">
-                        <a href="#" class="title text-truncate">Nguyễn Văn a</a>
-                        <div class="text-muted">ID: #0001</div> <!-- price.// -->
-                        <div class="price mb-2"><span class="badge rounded-pill alert-success">Hoạt động</span></div>
-                        <a href="#" data-bs-toggle="dropdown" class="btn btn-sm btn-outline-success">
-                          <i class="fas fa-pen"></i> Chỉnh sửa
-                        </a>
-                        <a href="#" data-bs-toggle="dropdown" class="btn btn-sm btn-outline-danger">
-                          <i class="fas fa-trash"></i></i> Xóa
-                        </a>
-                      </div>
-                    </div> <!-- card-product  end// -->
-                  </div> <!-- col.// -->
-                </div>
-                <nav class="float-end mt-4" aria-label="Page navigation">
-                  <ul class="pagination">
-                    <li class="page-item disabled "><a class="page-link" href="#">Trước</a></li>
-                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item"><a class="page-link" href="#">Sau</a></li>
-                  </ul>
-                </nav>
+                <table id="tableUser" class="table table-hover">
+                  <thead>
+                    <th style="width: 5%;">#ID</th>
+                    <th>Người dùng</th>
+                    <th>Email</th>
+                    <th>Trạng thái</th>
+                    <th class="text-end">Hành động</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>
+                        <div class="d-flex align-items-center">
+                          <img src="images/149071.png" style="height: 70px; width: 70px;" alt="">
+                          <h6 class="ps-2">Nguyễn Văn A</h6>
+                        </div>
+                      </td>
+                      <td>NguyenVanA@gmail.com</td>
+                      <td> <span class="badge rounded-pill alert-success">Active</span></td>
+                      <td>
+                        <button class="btn btn-success"><i class="fas fa-eye"></i></button>
+                        <button class="btn btn-warning text-white"><i class="fas fa-pen"></i></button>
+                        <button class="btn btn-danger"><i class="fas fa-trash"></i></button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>
+                        <div class="d-flex align-items-center">
+                          <img src="images/149071.png" style="height: 70px; width: 70px;" alt="">
+                          <h6 class="ps-2">Nguyễn Văn A</h6>
+                        </div>
+                      </td>
+                      <td>NguyenVanA@gmail.com</td>
+                      <td> <span class="badge rounded-pill alert-success">Active</span></td>
+                      <td>
+                        <button class="btn btn-success"><i class="fas fa-eye"></i></button>
+                        <button class="btn btn-warning text-white"><i class="fas fa-pen"></i></button>
+                        <button class="btn btn-danger"><i class="fas fa-trash"></i></button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>
+                        <div class="d-flex align-items-center">
+                          <img src="images/149071.png" style="height: 70px; width: 70px;" alt="">
+                          <h6 class="ps-2">Nguyễn Văn A</h6>
+                        </div>
+                      </td>
+                      <td>NguyenVanA@gmail.com</td>
+                      <td> <span class="badge rounded-pill alert-success">Active</span></td>
+                      <td>
+                        <button class="btn btn-success"><i class="fas fa-eye"></i></button>
+                        <button class="btn btn-warning text-white"><i class="fas fa-pen"></i></button>
+                        <button class="btn btn-danger"><i class="fas fa-trash"></i></button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>
+                        <div class="d-flex align-items-center">
+                          <img src="images/149071.png" style="height: 70px; width: 70px;" alt="">
+                          <h6 class="ps-2">Nguyễn Văn A</h6>
+                        </div>
+                      </td>
+                      <td>NguyenVanA@gmail.com</td>
+                      <td> <span class="badge rounded-pill alert-success">Active</span></td>
+                      <td>
+                        <button class="btn btn-success"><i class="fas fa-eye"></i></button>
+                        <button class="btn btn-warning text-white"><i class="fas fa-pen"></i></button>
+                        <button class="btn btn-danger"><i class="fas fa-trash"></i></button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>
+                        <div class="d-flex align-items-center">
+                          <img src="images/149071.png" style="height: 70px; width: 70px;" alt="">
+                          <h6 class="ps-2">Nguyễn Văn A</h6>
+                        </div>
+                      </td>
+                      <td>NguyenVanA@gmail.com</td>
+                      <td> <span class="badge rounded-pill alert-success">Active</span></td>
+                      <td>
+                        <button class="btn btn-success"><i class="fas fa-eye"></i></button>
+                        <button class="btn btn-warning text-white"><i class="fas fa-pen"></i></button>
+                        <button class="btn btn-danger"><i class="fas fa-trash"></i></button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div> <!-- card-body end// -->
             </div>
         </div> <!-- card end// -->
@@ -399,8 +313,38 @@
   <!-- ======== main-wrapper end =========== -->
 
   <!-- ========= All Javascript files linkup ======== -->
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      var table = $('#tableUser').DataTable({
+        language: {
+          processing: "đang tải",
+          search: "Tìm kiếm",
+          lengthMenu: "Số dòng hiển thị _MENU_ ",
+          info: "Bài viết từ _START_ đến _END_ trong _TOTAL_ Người dùng",
+          infoEmpty: "",
+          loadingRecords: "",
+          infoFiltered: "",
+          zeroRecords: "Không tìm thấy",
+          emptyTable: "Không có dữ liệu",
+          paginate: {
+            first: "Trang đầu",
+            previous: "Trang trước",
+            next: "Trang sau",
+            last: "Trang cuối"
+          },
+        },
+        columnDefs: [
+          { "className": "text-center", "targets": 3 },
+          { "className": "text-end", "targets": 4 },
+        ],
+      });
+    });
+  </script>
 </body>
 
 </html>
