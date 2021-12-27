@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon" />
-  <title>Blank Page | PlainAdmin Demo</title>
+  <title>Người Dùng</title>
 
   <!-- ========== All CSS files linkup ========= -->
   <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -135,7 +135,7 @@
                     <div class="info">
                       <h5>Big Bill</h5>
                       <div class="image">
-                        <img src="images/149071.png" alt="" />
+                        <img src="images/Sample_User_Icon.png" alt="" />
                         <span class="status"></span>
                       </div>
                     </div>
@@ -190,17 +190,16 @@
           <section class="content-main">
             <div class="content-header">
               <h2 class="content-title">Danh sách khách hàng </h2>
-              <div>
-                <a href="addUser.html" class="btn btn-success"></i> Thêm khách hàng</a>
-              </div>
             </div>
             <div class="card mb-4">
               <div class="card-body">
                 <table id="tableUser" class="table table-hover">
                   <thead>
                     <th style="width: 5%;">#ID</th>
+                    <th style="width: 70px;">Ảnh</th>
                     <th>Người dùng</th>
                     <th>Email</th>
+                    <th>Số điện thoại</th>
                     <th>Trạng thái</th>
                     <th class="text-end">Hành động</th>
                   </thead>
@@ -208,81 +207,83 @@
                     <tr>
                       <td>1</td>
                       <td>
-                        <div class="d-flex align-items-center">
-                          <img src="images/149071.png" style="height: 70px; width: 70px;" alt="">
-                          <h6 class="ps-2">Nguyễn Văn A</h6>
-                        </div>
+                        <img src="images/Sample_User_Icon.png" style="height: 70px; width: 70px;" alt="">
+                      </td>
+                      <td>
+                        <h6 class="ps-2">Nguyễn Văn A</h6>
                       </td>
                       <td>NguyenVanA@gmail.com</td>
+                      <td>0370000000</td>
+
                       <td> <span class="badge rounded-pill alert-success">Active</span></td>
                       <td>
-                        <button class="btn btn-success"><i class="fas fa-eye"></i></button>
-                        <button class="btn btn-warning text-white"><i class="fas fa-pen"></i></button>
-                        <button class="btn btn-danger"><i class="fas fa-trash"></i></button>
+                        <a href="addUser.html" class="btn btn-warning text-white"><i class="fas fa-pen"></i></a>
+                        <button class="btn btn-danger" onclick="deleteUser(id)"><i class="fas fa-trash"></i></button>
                       </td>
                     </tr>
                     <tr>
-                      <td>1</td>
+                      <td>2</td>
                       <td>
-                        <div class="d-flex align-items-center">
-                          <img src="images/149071.png" style="height: 70px; width: 70px;" alt="">
-                          <h6 class="ps-2">Nguyễn Văn A</h6>
-                        </div>
+                        <img src="images/Sample_User_Icon.png" style="height: 70px; width: 70px;" alt="">
                       </td>
-                      <td>NguyenVanA@gmail.com</td>
+                      <td>
+                        <h6 class="ps-2">Nguyễn Văn B</h6>
+                      </td>
+                      <td>NguyenVanB@gmail.com</td>
+                      <td>0370000000</td>
                       <td> <span class="badge rounded-pill alert-success">Active</span></td>
                       <td>
-                        <button class="btn btn-success"><i class="fas fa-eye"></i></button>
-                        <button class="btn btn-warning text-white"><i class="fas fa-pen"></i></button>
-                        <button class="btn btn-danger"><i class="fas fa-trash"></i></button>
+                        <a href="addUser.html" class="btn btn-warning text-white"><i class="fas fa-pen"></i></a>
+                        <button class="btn btn-danger" onclick="deleteUser(id)"><i class="fas fa-trash"></i></button>
+                      </td>
+
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>
+                        <img src="images/Sample_User_Icon.png" style="height: 70px; width: 70px;" alt="">
+                      </td>
+                      <td>
+                        <h6 class="ps-2">Nguyễn Văn C</h6>
+                      </td>
+                      <td>NguyenVanC@gmail.com</td>
+                      <td>0370000000</td>
+                      <td> <span class="badge rounded-pill alert-success">Active</span></td>
+                      <td>
+                        <a href="addUser.html" class="btn btn-warning text-white"><i class="fas fa-pen"></i></a>
+                        <button class="btn btn-danger" onclick="deleteUser(id)"><i class="fas fa-trash"></i></button>
                       </td>
                     </tr>
                     <tr>
-                      <td>1</td>
+                      <td>4</td>
                       <td>
-                        <div class="d-flex align-items-center">
-                          <img src="images/149071.png" style="height: 70px; width: 70px;" alt="">
-                          <h6 class="ps-2">Nguyễn Văn A</h6>
-                        </div>
+                        <img src="images/Sample_User_Icon.png" style="height: 70px; width: 70px;" alt="">
                       </td>
-                      <td>NguyenVanA@gmail.com</td>
+                      <td>
+                        <h6 class="ps-2">Nguyễn Văn D</h6>
+                      </td>
+                      <td>NguyenVanD@gmail.com</td>
+                      <td>0370000000</td>
                       <td> <span class="badge rounded-pill alert-success">Active</span></td>
                       <td>
-                        <button class="btn btn-success"><i class="fas fa-eye"></i></button>
-                        <button class="btn btn-warning text-white"><i class="fas fa-pen"></i></button>
-                        <button class="btn btn-danger"><i class="fas fa-trash"></i></button>
+                        <a href="addUser.html" class="btn btn-warning text-white"><i class="fas fa-pen"></i></a>
+                        <button class="btn btn-danger" onclick="deleteUser(id)"><i class="fas fa-trash"></i></button>
                       </td>
                     </tr>
                     <tr>
-                      <td>1</td>
+                      <td>5</td>
                       <td>
-                        <div class="d-flex align-items-center">
-                          <img src="images/149071.png" style="height: 70px; width: 70px;" alt="">
-                          <h6 class="ps-2">Nguyễn Văn A</h6>
-                        </div>
+                        <img src="images/Sample_User_Icon.png" style="height: 70px; width: 70px;" alt="">
                       </td>
-                      <td>NguyenVanA@gmail.com</td>
+                      <td>
+                        <h6 class="ps-2">Nguyễn Văn E</h6>
+                      </td>
+                      <td>NguyenVanE@gmail.com</td>
+                      <td>0370000000</td>
                       <td> <span class="badge rounded-pill alert-success">Active</span></td>
                       <td>
-                        <button class="btn btn-success"><i class="fas fa-eye"></i></button>
-                        <button class="btn btn-warning text-white"><i class="fas fa-pen"></i></button>
-                        <button class="btn btn-danger"><i class="fas fa-trash"></i></button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>1</td>
-                      <td>
-                        <div class="d-flex align-items-center">
-                          <img src="images/149071.png" style="height: 70px; width: 70px;" alt="">
-                          <h6 class="ps-2">Nguyễn Văn A</h6>
-                        </div>
-                      </td>
-                      <td>NguyenVanA@gmail.com</td>
-                      <td> <span class="badge rounded-pill alert-success">Active</span></td>
-                      <td>
-                        <button class="btn btn-success"><i class="fas fa-eye"></i></button>
-                        <button class="btn btn-warning text-white"><i class="fas fa-pen"></i></button>
-                        <button class="btn btn-danger"><i class="fas fa-trash"></i></button>
+                        <a href="addUser.html" class="btn btn-warning text-white"><i class="fas fa-pen"></i></a>
+                        <button class="btn btn-danger" onclick="deleteUser(id)"><i class="fas fa-trash"></i></button>
                       </td>
                     </tr>
                   </tbody>
@@ -339,11 +340,18 @@
           },
         },
         columnDefs: [
-          { "className": "text-center", "targets": 3 },
-          { "className": "text-end", "targets": 4 },
+          { "className": "text-center", "targets": 5 },
+          { "className": "text-end", "targets": 6 },
         ],
       });
+
+
     });
+    function deleteUser(id) {
+      if (confirm("Delete account id: " + id) == true) {
+        alert('Done')
+      }
+    }
   </script>
 </body>
 
