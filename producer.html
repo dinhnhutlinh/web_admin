@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon" />
-  <title>Blank Page | PlainAdmin Demo</title>
+  <title>danh sách nhà phát hành</title>
 
   <!-- ========== All CSS files linkup ========= -->
   <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -33,11 +33,11 @@
           </a>
         </li>
         <li class="nav-item">
-          <a href="listUser.html">
+          <a href="listCustomer.html">
             <span class="icon">
               <i class="fas fa-users"></i>
             </span>
-            <span class="text">Người dùng</span>
+            <span class="text">Khách hàng</span>
           </a>
         </li>
         <li class="nav-item">
@@ -77,7 +77,7 @@
             <span class="icon">
               <i class="fas fa-store"></i>
             </span>
-            <span class="text">Nhà phát hành</span>
+            <span class="text">Nhà cung cấp</span>
           </a>
         </li>
         <li class="nav-item">
@@ -171,7 +171,7 @@
                   <a href="#0">Dashboard</a>
                 </li>
                 <li class="breadcrumb-item active" aria-current="page">
-                  Nhà phát hành
+                  Nhà cung cấp
                 </li>
               </ol>
 
@@ -183,15 +183,15 @@
         <div class="row">
           <section class="content-main">
             <div class="content-header">
-              <h2 class="content-title">Danh sách khách hàng </h2>
-              <a href="addProducer.html" class="btn btn-orange">Thêm nhà phát hành</a>
+              <h2 class="content-title">Danh sách nhà cung cấp</h2>
+              <a href="addProducer.html" class="btn btn-orange">Thêm Nhà cung cấp</a>
             </div>
             <div class="card mb-4">
               <div class="card-body">
                 <table id="tableUser" class="table table-hover">
                   <thead>
                     <th style="width: 5%;">#ID</th>
-                    <th>Nhà phát hành</th>
+                    <th>Nhà cung cấp</th>
                     <th>Email</th>
                     <th>Số điện thoại</th>
                     <th>Số lượng sản phẩm</th>
@@ -274,6 +274,7 @@
       var table = $('#tableUser').DataTable({
         searching: false,
         paging: false,
+        info: false,
         language: {
           processing: "đang tải",
           search: "Tìm kiếm",

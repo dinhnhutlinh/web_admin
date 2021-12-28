@@ -34,11 +34,11 @@
           </a>
         </li>
         <li class="nav-item">
-          <a href="listUser.html">
+          <a href="listCustomer.html">
             <span class="icon">
               <i class="fas fa-users"></i>
             </span>
-            <span class="text">Người dùng</span>
+            <span class="text">Khách hàng</span>
           </a>
         </li>
         <li class="nav-item">
@@ -78,7 +78,7 @@
             <span class="icon">
               <i class="fas fa-store"></i>
             </span>
-            <span class="text">Nhà phát hành</span>
+            <span class="text">Nhà cung cấp</span>
           </a>
         </li>
         <li class="nav-item">
@@ -268,6 +268,7 @@
       var table = $('#tableSlider').DataTable({
         searching: false,
         paging: false,
+        info: false,
         language: {
           processing: "đang tải",
           search: "Tìm kiếm",

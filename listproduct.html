@@ -34,11 +34,11 @@
           </a>
         </li>
         <li class="nav-item">
-          <a href="listUser.html">
+          <a href="listCustomer.html">
             <span class="icon">
               <i class="fas fa-users"></i>
             </span>
-            <span class="text">Người dùng</span>
+            <span class="text">Khách hàng</span>
           </a>
         </li>
         <li class="nav-item">
@@ -78,7 +78,7 @@
             <span class="icon">
               <i class="fas fa-store"></i>
             </span>
-            <span class="text">Nhà phát hành</span>
+            <span class="text">Nhà cung cấp</span>
           </a>
         </li>
         <li class="nav-item">
@@ -201,7 +201,7 @@
                       <th class="w-25">Sản phẩm</th>
                       <th>Giá</th>
                       <th>SL</th>
-                      <th>Nhà phát hành</th>
+                      <th>Nhà cung cấp</th>
                       <th>#ID KM</th>
                       <th class="text-end">Hành động</th>
                     </thead>
@@ -248,6 +248,7 @@
                         <td>500000 VND</td>
                         <td>300</td>
                         <td>BroadGame VN</td>
+                        <td>2</td>
                         <td>
                           <a href="addProduct.html" class="btn btn-warning text-white"><i class="fas fa-pen"></i></a>
                           <button class="btn btn-danger"><i class="fas fa-trash"></i></button>
@@ -263,6 +264,7 @@
                         <td>150000 VND</td>
                         <td>300</td>
                         <td>BroadGame VN</td>
+                        <td>3</td>
                         <td>
                           <a href="addProduct.html" class="btn btn-warning text-white"><i class="fas fa-pen"></i></a>
                           <button class="btn btn-danger"><i class="fas fa-trash"></i></button>
@@ -278,6 +280,7 @@
                         <td>435000 VND</td>
                         <td>300</td>
                         <td>BroadGame VN</td>
+                        <td>4</td>
                         <td>
                           <a href="addProduct.html" class="btn btn-warning text-white"><i class="fas fa-pen"></i></a>
                           <button class="btn btn-danger"><i class="fas fa-trash"></i></button>
@@ -293,6 +296,7 @@
                         <td>350000 VND</td>
                         <td>300</td>
                         <td>BroadGame VN</td>
+                        <td>2</td>
                         <td>
                           <a href="addProduct.html" class="btn btn-warning text-white"><i class="fas fa-pen"></i></a>
                           <button class="btn btn-danger"><i class="fas fa-trash"></i></button>
@@ -311,6 +315,7 @@
                         <td>450000 VND</td>
                         <td>300</td>
                         <td>BroadGame VN</td>
+                        <td>1</td>
                         <td>
                           <a href="addProduct.html" class="btn btn-warning text-white"><i class="fas fa-pen"></i></a>
                           <button class="btn btn-danger"><i class="fas fa-trash"></i></button>
@@ -343,7 +348,7 @@
           processing: "đang tải",
           search: "Tìm kiếm",
           lengthMenu: "Số dòng hiển thị _MENU_ ",
-          info: "Bài viết từ _START_ đến _END_ trong _TOTAL_ Đơn hàng",
+          info: "Từ _START_ đến _END_ trong _TOTAL_ Đơn hàng",
           infoEmpty: "",
           loadingRecords: "",
           infoFiltered: "",
@@ -357,8 +362,8 @@
           },
         },
         columnDefs: [
-          { "className": "text-center", "targets": 5 },
-          { "className": "text-end", "targets": 6 },
+          { "className": "text-center", "targets": 6 },
+          { "className": "text-end", "targets": 7 },
         ],
       });
 
